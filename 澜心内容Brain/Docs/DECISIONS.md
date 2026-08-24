@@ -36,3 +36,10 @@ status: active
 - 日期：2026-08-14
 - 决定：统一使用 raw_idea → discussing → idea_clear → structure_ready → drafting → approved → published → reviewed。
 - 影响：Inbox、Content 和 Reviews 不另发明并行状态系统。
+
+## D-006｜视频内容档案以文本事实和双 ID 跨设备关联
+
+- 日期：2026-08-24
+- 决定：原始视频、音频、剪辑工程与平台后台截图不进入公开 GitHub；GitHub 保存脱敏的视频内容档案、三层逐字稿、发布数据快照与复盘。Content ID 是一条内容的唯一主键；Publish ID 是一次平台发布的唯一主键。
+- 影响：同一内容跨平台发布不得重复建立 Content；数据按新增 Snapshot 追加、不覆盖历史值。原始媒体由 iCloud、NAS、网盘或其他受控媒体资产系统跨电脑管理，不记录本机绝对路径。
+- 边界：视频转写、评论、数据和单条复盘中的候选原话或洞见不自动升级 Brain，须澜心明确确认；公开仓库只提交 public_safe 的公开安全文本。

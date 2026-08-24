@@ -13,3 +13,6 @@ private/
 raw/
 exports/
 .codex-tmp/
+LocalMedia/
+DataScreenshots/
+TranscriptionCache/

@@ -69,3 +69,14 @@
 - 仅在工作区干净且不存在本地未提交修改、本地独有 commit 或分叉时，才同步最新 `main`；发现任一情况时，禁止直接覆盖，先保护并报告。
 - 正式规则、Brain、Content、Docs、Inbox、Reviews、Prompts 与 Project资料同步包不得长期只存在某一台电脑。
 - 正式修改完成后，必须 commit、`git push origin main`，并比较 Local HEAD 与 `git ls-remote origin refs/heads/main`，确认两者相等。
+
+## 9. 视频内容档案与数据记录
+
+- 视频内容任务开始前，必须读取 `澜心内容Brain/Docs/VIDEO_CONTENT_SYSTEM.md` 及对应模板。
+- 一条内容只能有一个正式 Content ID；同一内容多平台发布不得重复建立 Content，而应建立不同 Publish ID。
+- Content status 继续使用现有唯一状态链；`media_stage` 只记录媒体制作进度，不得另建视频状态系统。
+- 发布数据采用追加式 Data Snapshot，绝不覆盖历史值；平台原始数据与 AI 计算指标必须分开。
+- 逐字稿必须区分原始机器转写、AI 核对版、AI 整理版；AI 改写不得冒充澜心原话。
+- 候选长期洞见、候选原话和 AI 建议不得自动升级到 Brain；必须等待澜心明确确认。
+- 原始视频、后台截图、本机绝对路径及未脱敏的反馈不进入公开仓库。本地媒体缺失或不可读取时，不得假装已核对或已转写视频。
+- GitHub `origin/main` 是视频文本档案和数据记录的唯一正式事实源；媒体资产的跨电脑访问使用受控媒体存储。
