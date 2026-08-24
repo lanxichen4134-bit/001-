@@ -60,3 +60,12 @@
 5. 比较 git rev-parse HEAD 与 git ls-remote origin refs/heads/<当前分支>，确认 Local HEAD = Remote HEAD。
 
 禁止 git reset --hard、git clean -fd、git checkout -- .、force push，除非澜心明确逐项授权。
+
+## 8. GitHub 与多电脑协作原则
+
+- GitHub `origin/main` 是本项目唯一正式事实源；不以任何一台电脑的本地副本作为项目主版本。
+- 家里电脑与当前电脑不手工复制正式项目文件，统一通过 GitHub 完成版本同步；`AGENTS.md` 本身也以 GitHub `main` 的正式版本为准。
+- 每次开始正式工作前，先 `git fetch origin`，并检查本地与 `origin/main` 的分支、工作区和提交差异。
+- 仅在工作区干净且不存在本地未提交修改、本地独有 commit 或分叉时，才同步最新 `main`；发现任一情况时，禁止直接覆盖，先保护并报告。
+- 正式规则、Brain、Content、Docs、Inbox、Reviews、Prompts 与 Project资料同步包不得长期只存在某一台电脑。
+- 正式修改完成后，必须 commit、`git push origin main`，并比较 Local HEAD 与 `git ls-remote origin refs/heads/main`，确认两者相等。

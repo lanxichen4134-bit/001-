@@ -6,9 +6,9 @@ branch: main
 remote: origin
 visibility: public
 stage: V0.1 已初始化，可开始长期使用
-last_updated: 2026-08-14T18:51:01+08:00
-last_execution: 已归档 2026-08-14 女性身体健康用户提问型选题共创；内容资产提交 77c708bdd69690d1d71233f09ac4d60578c98fd0 已推送并通过远端 SHA 验证
-last_remote_verification: 2026-08-14 内容资产提交 77c708bdd69690d1d71233f09ac4d60578c98fd0 已验证 Local HEAD = Remote HEAD；本次验证状态记录提交将随后按同一方式验证
+last_updated: 2026-08-24T17:15:55+08:00
+last_execution: 当前电脑从 GitHub origin/main 接入；已核对无本地独有内容，并为根目录 AGENTS.md 补充 GitHub 唯一事实源与两台电脑协作规则；本次正式规则提交将按同一规则推送并验证
+last_remote_verification: 2026-08-24 接入前，e7da265c3e351e89c750f7bbbe26f1c875343e63 已通过 git fetch 与 git ls-remote 核对为 origin/main，Local HEAD = Remote HEAD
 ---
 
 # 当前目标
@@ -25,6 +25,7 @@ last_remote_verification: 2026-08-14 内容资产提交 77c708bdd69690d1d71233f0
 - 新增 `Content/共创记录/2026-08-14_女性身体健康用户提问型选题_共创记录.md`：保存三阶段共创判断、澜心三条原话、20 个最终问句、候选方法与专业边界。
 - 新增 `Content/选题库/女性身体健康_用户提问型选题.md`：保存 20 个原始问句及待验证的场景、需求、承接方向与风险提示；不重建全 IP 选题总库。
 - 内容资产提交 `77c708bdd69690d1d71233f09ac4d60578c98fd0` 已推送至 origin/main，并验证 Local HEAD = Remote HEAD。
+- 当前电脑已从 GitHub `origin/main` 接入；根目录 `AGENTS.md` 已明确 GitHub 为唯一正式事实源及两台电脑协作闭环。
 
 # 当前进行中
 
@@ -46,8 +47,8 @@ last_remote_verification: 2026-08-14 内容资产提交 77c708bdd69690d1d71233f0
 
 # 最近一次 Codex 执行
 
-2026-08-14：完成 V0.1 文档施工、初始提交与首次远端 SHA 验证；归档女性身体健康用户提问型选题共创，内容资产提交 77c708bdd69690d1d71233f09ac4d60578c98fd0 已推送并验证。
+2026-08-24：当前电脑从 GitHub `origin/main` 正式接入；确认无待保护的本地独有内容，并补充多电脑协作规则。相关提交将推送并通过远端 SHA 验证。
 
 # 最近一次 GitHub 远端验证
 
-2026-08-14：内容资产提交 77c708bdd69690d1d71233f09ac4d60578c98fd0 已验证 Local HEAD = Remote HEAD。
+2026-08-24：接入前已核验 `e7da265c3e351e89c750f7bbbe26f1c875343e63` 为 `origin/main`，且 Local HEAD = Remote HEAD。
