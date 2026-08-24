@@ -5,10 +5,10 @@ repository: https://github.com/lanxichen4134-bit/001-.git
 branch: main
 remote: origin
 visibility: public
-stage: V0.1 已初始化；视频内容档案系统已建立，等待首条真实记录验证
-last_updated: 2026-08-24T18:16:04+08:00
-last_execution: 已核对 main 与 origin/main 无分叉、无待保护本地修改；建立视频内容档案、三层逐字稿、发布与追加式数据快照、复盘模板及固定 Prompt，并接入 AGENTS、系统地图和正式决策。待本次提交推送后更新 SHA 验证。
-last_remote_verification: 2026-08-24 本次执行开始前，e1f4417653bb7dc87173396f3c03b94e01ec35c4 已通过 git fetch 与 git ls-remote 核对为 origin/main，Local HEAD = Remote HEAD；本次提交后须重新验证。
+stage: V0.1 已初始化；视频内容档案系统已正式进入 origin/main，可开始首条真实记录验证
+last_updated: 2026-08-24T18:50:21+08:00
+last_execution: 视频内容档案系统提交 9b62356ae7ec3c62ba3a4e116ed1ec8c4fca8e9a 已以公开 GitHub noreply 身份推送至 origin/main，并通过 git fetch 与 git ls-remote 验证 Local HEAD = Remote HEAD；本状态验证待本次最小提交后再次核验。
+last_remote_verification: 2026-08-24 视频系统提交 9b62356ae7ec3c62ba3a4e116ed1ec8c4fca8e9a 已为 origin/main，Local HEAD = Remote HEAD；状态验证提交后须重新验证。
 ---
 
 # 当前目标
@@ -30,17 +30,18 @@ last_remote_verification: 2026-08-24 本次执行开始前，e1f4417653bb7dc8717
 - 已新增视频档案、逐字稿、视频发布记录的规则与模板，以及视频入库、数据与复盘的固定 Prompt；不迁移任何历史视频、截图或逐字稿。
 - 已将原始媒体与后台截图排除在公开仓库外，并在 `.gitignore` 增加 LocalMedia、DataScreenshots、TranscriptionCache 防误提交目录。
 - 已在 AGENTS、SYSTEM_MAP 和 DECISIONS 中明确视频文本档案的公开安全、跨电脑和 Brain 升级边界。
+- 视频内容档案系统已正式进入 `origin/main`：Content ID、Publish ID、视频档案模板、三层逐字稿、发布数据 Snapshot、Reviews 视频复盘、两个视频工作 Prompt、public_safety 与媒体不进入公开仓库规则已在两台电脑共同使用的正式事实源中生效。
 
 # 当前进行中
 
-- 无；下一步以一条真实视频和一组真实发布后台截图跑通首次完整记录。
+- 无。
 
 # 当前待处理
 
 - 澜心后续确认：哪些研究中观点升级为已确认；哪些个人经历、头衔和数据可对外公开。
 - 如需让旧 Vault 与本 Brain 双向同步，先确认仓库可见性、链接策略和授权边界。
 - 对本次 20 个用户提问型选题进行经授权的真实用户研究验证，确认真实语言、优先级、论据与具体产品承接；当前候选方法不得直接升级为 Brain 核心原则。
-- 提供 1 条可读取的真实视频与 1 组真实后台截图，建立首个 Content ID、对应 Publish ID、数据 Snapshot 和复盘；截图/反馈先脱敏，原始媒体不提交。
+- 可开始首条真实视频测试：提供 1 条可读取的真实视频与 1 组真实后台截图，建立首个 Content ID、对应 Publish ID、数据 Snapshot 和复盘；截图/反馈先脱敏，原始媒体不提交。
 
 # 当前阻塞
 
@@ -56,6 +57,8 @@ last_remote_verification: 2026-08-24 本次执行开始前，e1f4417653bb7dc8717
 
 2026-08-24：完成视频内容档案系统的规则、模板、Prompt、公开安全边界与系统接入；未处理历史媒体或 Brain 升级。本次提交推送和远端 SHA 验证待完成后补记。
 
+2026-08-24：将视频内容档案系统提交 `9b62356ae7ec3c62ba3a4e116ed1ec8c4fca8e9a` 正式推送至 `origin/main`，并验证 Local HEAD = Remote HEAD；当前可开始首条真实视频测试。本次状态验证提交待完成后再次核验。
+
 # 最近一次 GitHub 远端验证
 
-2026-08-24：已核验 `e1f4417653bb7dc87173396f3c03b94e01ec35c4` 为本次执行前的 `origin/main`，且 Local HEAD = Remote HEAD；本次视频系统提交待推送后重新验证。
+2026-08-24：已核验 `9b62356ae7ec3c62ba3a4e116ed1ec8c4fca8e9a` 为视频系统提交后的 `origin/main`，且 Local HEAD = Remote HEAD；本状态验证提交待推送后再次核验。
