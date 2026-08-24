@@ -6,9 +6,9 @@ branch: main
 remote: origin
 visibility: public
 stage: V0.1 已初始化，可开始长期使用
-last_updated: 2026-08-24T17:15:55+08:00
-last_execution: 当前电脑从 GitHub origin/main 接入；已核对无本地独有内容，并为根目录 AGENTS.md 补充 GitHub 唯一事实源与两台电脑协作规则；本次正式规则提交将按同一规则推送并验证
-last_remote_verification: 2026-08-24 接入前，e7da265c3e351e89c750f7bbbe26f1c875343e63 已通过 git fetch 与 git ls-remote 核对为 origin/main，Local HEAD = Remote HEAD
+last_updated: 2026-08-24T17:17:57+08:00
+last_execution: 当前电脑从 GitHub origin/main 接入；已核对无本地独有内容，并为根目录 AGENTS.md 补充 GitHub 唯一事实源与两台电脑协作规则；正式规则提交 55261b790cac3ec29d33ce374f58795627a5fbc0 已推送并验证
+last_remote_verification: 2026-08-24 规则提交 55261b790cac3ec29d33ce374f58795627a5fbc0 已通过 git fetch 与 git ls-remote 核对为 origin/main，Local HEAD = Remote HEAD
 ---
 
 # 当前目标
@@ -47,8 +47,8 @@ last_remote_verification: 2026-08-24 接入前，e7da265c3e351e89c750f7bbbe26f1c
 
 # 最近一次 Codex 执行
 
-2026-08-24：当前电脑从 GitHub `origin/main` 正式接入；确认无待保护的本地独有内容，并补充多电脑协作规则。相关提交将推送并通过远端 SHA 验证。
+2026-08-24：当前电脑从 GitHub `origin/main` 正式接入；确认无待保护的本地独有内容，并补充多电脑协作规则。提交 `55261b790cac3ec29d33ce374f58795627a5fbc0` 已推送并通过远端 SHA 验证。
 
 # 最近一次 GitHub 远端验证
 
-2026-08-24：接入前已核验 `e7da265c3e351e89c750f7bbbe26f1c875343e63` 为 `origin/main`，且 Local HEAD = Remote HEAD。
+2026-08-24：已核验 `55261b790cac3ec29d33ce374f58795627a5fbc0` 为 `origin/main`，且 Local HEAD = Remote HEAD。
