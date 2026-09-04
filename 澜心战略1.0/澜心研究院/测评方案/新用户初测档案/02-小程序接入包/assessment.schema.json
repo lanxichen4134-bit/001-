@@ -1,0 +1,326 @@
+{
+  "version": "1.0.0",
+  "title": "澜心社女性身体状态测评",
+  "estimatedMinutes": "3-5",
+  "disclaimer": "本测评用于健康教育、运动与生活方式建议，不用于医疗诊断或替代专业医疗评估。",
+  "sections": [
+    {
+      "id": "basic",
+      "title": "基本身体档案",
+      "questions": [
+        {
+          "id": "ageRange",
+          "type": "single",
+          "required": true,
+          "title": "你的年龄",
+          "options": [
+            {"value": "LT25", "label": "25岁以下"},
+            {"value": "25_29", "label": "25–29岁"},
+            {"value": "30_34", "label": "30–34岁"},
+            {"value": "35_39", "label": "35–39岁"},
+            {"value": "40_44", "label": "40–44岁"},
+            {"value": "45_49", "label": "45–49岁"},
+            {"value": "50_59", "label": "50–59岁"},
+            {"value": "60_PLUS", "label": "60岁以上"}
+          ]
+        },
+        {
+          "id": "lifeStage",
+          "type": "single",
+          "required": true,
+          "title": "你目前处于哪个生命阶段？",
+          "options": [
+            {"value": "NULLIPAROUS", "label": "未生育"},
+            {"value": "PRECONCEPTION", "label": "备孕期"},
+            {"value": "PREGNANT", "label": "孕期"},
+            {"value": "POSTPARTUM_LT6W", "label": "产后6周以内"},
+            {"value": "POSTPARTUM_6W_1Y", "label": "产后6周–1年"},
+            {"value": "POSTPARTUM_1_3Y", "label": "产后1–3年"},
+            {"value": "POSTPARTUM_GT3Y", "label": "产后3年以上"},
+            {"value": "PERIMENOPAUSE", "label": "围绝经期"},
+            {"value": "POSTMENOPAUSE", "label": "绝经后"}
+          ]
+        },
+        {
+          "id": "parity",
+          "type": "single",
+          "required": true,
+          "title": "你的生育次数",
+          "visibleWhen": {"field": "lifeStage", "notIn": ["NULLIPAROUS", "PRECONCEPTION"]},
+          "options": [
+            {"value": "0", "label": "未生育"},
+            {"value": "1", "label": "1次"},
+            {"value": "2", "label": "2次"},
+            {"value": "3_PLUS", "label": "3次及以上"}
+          ]
+        },
+        {
+          "id": "deliveryType",
+          "type": "multi",
+          "required": false,
+          "title": "你的生产方式",
+          "visibleWhen": {"field": "parity", "notIn": ["0", null]},
+          "options": [
+            {"value": "VAGINAL", "label": "顺产"},
+            {"value": "CESAREAN", "label": "剖宫产"}
+          ]
+        },
+        {"id": "heightCm", "type": "number", "required": true, "title": "身高（cm）", "min": 130, "max": 200},
+        {"id": "weightKg", "type": "number", "required": true, "title": "体重（kg）", "min": 30, "max": 200},
+        {"id": "waistCm", "type": "number", "required": true, "title": "腰围（cm）", "min": 45, "max": 180},
+        {"id": "hipCm", "type": "number", "required": true, "title": "臀围（cm）", "min": 60, "max": 200},
+        {
+          "id": "bodyFatKnown",
+          "type": "single",
+          "required": true,
+          "title": "你知道自己的体脂率吗？",
+          "options": [
+            {"value": "NO", "label": "不知道"},
+            {"value": "YES", "label": "知道"}
+          ]
+        },
+        {
+          "id": "bodyFatPct",
+          "type": "number",
+          "required": false,
+          "title": "体脂率（%）",
+          "min": 5,
+          "max": 60,
+          "visibleWhen": {"field": "bodyFatKnown", "equals": "YES"}
+        }
+      ]
+    },
+    {
+      "id": "shape",
+      "title": "体型曲线分析",
+      "questions": [
+        {
+          "id": "bodyShape",
+          "type": "single_image",
+          "required": true,
+          "title": "哪一种最像你现在的身体？",
+          "options": [
+            {"value": "A", "label": "A型｜下身集中型"},
+            {"value": "H", "label": "H型｜直线型"},
+            {"value": "O", "label": "O型｜腰腹集中型"},
+            {"value": "V", "label": "V型｜上宽下窄型"},
+            {"value": "X", "label": "X型｜曲线型"}
+          ]
+        },
+        {
+          "id": "bodyConcerns",
+          "type": "multi",
+          "required": true,
+          "title": "你最想改变哪些地方？",
+          "maxSelections": 5,
+          "options": [
+            {"value": "LOWER_ABDOMEN", "label": "小腹突出"},
+            {"value": "WAIST", "label": "腰粗/没有腰线"},
+            {"value": "PELVIS_WIDTH", "label": "骨盆视觉宽"},
+            {"value": "FLAT_GLUTES", "label": "臀部扁平"},
+            {"value": "SAGGING_GLUTES", "label": "臀部下垂"},
+            {"value": "THIGHS", "label": "大腿粗"},
+            {"value": "ARMS", "label": "手臂松"},
+            {"value": "BACK", "label": "背部厚"},
+            {"value": "UPPER_POSTURE", "label": "胸型/上半身体态"},
+            {"value": "LOOSE_OVERALL", "label": "整体松垮"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "posture",
+      "title": "体态与核心",
+      "questions": [
+        {
+          "id": "postureTags",
+          "type": "multi",
+          "required": true,
+          "title": "下面哪些情况比较像你？",
+          "options": [
+            {"value": "FORWARD_HEAD", "label": "头容易向前伸"},
+            {"value": "ROUNDED_SHOULDERS", "label": "圆肩/含胸"},
+            {"value": "SHOULDER_ASYMMETRY", "label": "高低肩明显"},
+            {"value": "RIB_FLARE", "label": "肋骨容易向前翻"},
+            {"value": "ABDOMEN_PROTRUSION", "label": "小腹经常向前顶"},
+            {"value": "ANTERIOR_PELVIC_TILT_TENDENCY", "label": "腰弧明显、屁股后翘"},
+            {"value": "PELVIC_ASYMMETRY", "label": "左右骨盆/臀线不一样高"},
+            {"value": "LOWER_LIMB_ALIGNMENT", "label": "膝盖锁死、X/O型腿或足弓塌陷"},
+            {"value": "NONE_UNSURE", "label": "没有明显感觉/不确定", "exclusive": true}
+          ]
+        },
+        {
+          "id": "breathPattern",
+          "type": "single",
+          "required": true,
+          "title": "平时呼吸时，你更容易感觉哪里在动？",
+          "options": [
+            {"value": "CHEST", "label": "胸口"},
+            {"value": "SHOULDERS", "label": "肩膀"},
+            {"value": "ABDOMEN", "label": "腹部"},
+            {"value": "BACK_WAIST", "label": "腰背"},
+            {"value": "UNSURE", "label": "不知道"}
+          ]
+        },
+        {
+          "id": "breathHolding",
+          "type": "single",
+          "required": true,
+          "title": "做腹部或盆底训练时，你是否经常憋气？",
+          "options": [
+            {"value": "OFTEN", "label": "经常"},
+            {"value": "SOMETIMES", "label": "偶尔"},
+            {"value": "RARELY", "label": "很少"},
+            {"value": "UNSURE", "label": "不确定"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pelvic",
+      "title": "盆底功能自测",
+      "scale": {"0": "从不/没有", "1": "偶尔/轻微", "2": "经常/明显", "3": "几乎每次/非常明显"},
+      "questions": [
+        {"id": "pf01StressLeak", "type": "scale_0_3", "required": true, "title": "咳嗽、打喷嚏、跳跃或跑步时会漏尿吗？"},
+        {"id": "pf02Urgency", "type": "scale_0_3", "required": true, "title": "是否会突然特别想尿，甚至来不及去厕所？"},
+        {
+          "id": "pf03Nocturia",
+          "type": "single",
+          "required": true,
+          "title": "夜里通常需要起来小便几次？",
+          "options": [
+            {"value": 0, "label": "0次"},
+            {"value": 1, "label": "1次"},
+            {"value": 2, "label": "2次"},
+            {"value": 3, "label": "3次及以上"}
+          ]
+        },
+        {"id": "pf04VoidingDifficulty", "type": "scale_0_3", "required": true, "title": "是否有排尿启动困难，或尿完仍觉得没有排干净？"},
+        {"id": "pf05Heaviness", "type": "scale_0_3", "required": true, "title": "久站、运动或一天结束时，下腹/会阴是否有坠胀感？"},
+        {
+          "id": "pf06ProlapseSensation",
+          "type": "single",
+          "required": true,
+          "title": "是否感觉阴道内有东西向下坠或有突出感？",
+          "options": [
+            {"value": 0, "label": "没有"},
+            {"value": 1, "label": "偶尔"},
+            {"value": 2, "label": "经常"},
+            {"value": 3, "label": "明显感觉到突出"}
+          ]
+        },
+        {"id": "pf07ConstipationStrain", "type": "scale_0_3", "required": true, "title": "是否经常便秘，排便需要明显用力？"},
+        {"id": "pf08BowelControl", "type": "scale_0_3", "required": true, "title": "是否有控制不住排气或大便的情况？"},
+        {"id": "pf09PelvicPain", "type": "scale_0_3", "required": true, "title": "平时是否有会阴、阴道口、尾骨或盆腔区域紧绷/疼痛？"},
+        {
+          "id": "pf10InsertionPain",
+          "type": "single",
+          "required": true,
+          "title": "亲密活动或置入时是否有明显紧张、疼痛或难以放松？",
+          "options": [
+            {"value": 0, "label": "没有"},
+            {"value": 1, "label": "偶尔"},
+            {"value": 2, "label": "经常"},
+            {"value": 3, "label": "因此避免亲密活动/置入"}
+          ]
+        },
+        {
+          "id": "pf11ContractionSense",
+          "type": "single",
+          "required": true,
+          "title": "轻轻收缩盆底时，你能感觉到盆底向内、向上提起吗？",
+          "options": [
+            {"value": 0, "label": "很明显"},
+            {"value": 1, "label": "有一点"},
+            {"value": 2, "label": "不确定"},
+            {"value": 3, "label": "完全找不到"}
+          ]
+        },
+        {
+          "id": "pf12RelaxSense",
+          "type": "single",
+          "required": true,
+          "title": "轻轻收紧后，你能够完全放松吗？",
+          "options": [
+            {"value": 0, "label": "可以"},
+            {"value": 1, "label": "有一点困难"},
+            {"value": 2, "label": "很难"},
+            {"value": 3, "label": "不知道什么叫放松"}
+          ]
+        },
+        {
+          "id": "pf13Compensation",
+          "type": "multi",
+          "required": true,
+          "title": "轻轻收缩盆底时，你是否会同时出现这些情况？",
+          "options": [
+            {"value": "HOLD_BREATH", "label": "憋气"},
+            {"value": "SQUEEZE_GLUTES", "label": "收紧臀部"},
+            {"value": "SQUEEZE_THIGHS", "label": "夹大腿"},
+            {"value": "BRACE_ABS", "label": "腹部猛烈收紧"},
+            {"value": "NECK_SHOULDER_TENSION", "label": "肩颈用力"},
+            {"value": "NONE", "label": "都没有", "exclusive": true},
+            {"value": "UNSURE", "label": "不确定"}
+          ]
+        },
+        {
+          "id": "pf14Endurance",
+          "type": "single",
+          "required": true,
+          "title": "轻轻收紧盆底后，能否自然呼吸并保持约3–5秒？",
+          "options": [
+            {"value": 0, "label": "可以"},
+            {"value": 1, "label": "约2–3秒"},
+            {"value": 2, "label": "很快就掉"},
+            {"value": 3, "label": "不确定/无法做到"}
+          ]
+        },
+        {"id": "impactScore", "type": "slider", "required": true, "title": "这些身体问题目前对你的生活影响有多大？", "min": 0, "max": 10}
+      ]
+    },
+    {
+      "id": "red_flags",
+      "title": "安全确认",
+      "questions": [
+        {
+          "id": "redFlags",
+          "type": "multi",
+          "required": true,
+          "title": "近期是否存在以下情况？",
+          "options": [
+            {"value": "UNEXPLAINED_BLEEDING", "label": "原因不明的阴道异常出血"},
+            {"value": "HEMATURIA", "label": "血尿"},
+            {"value": "URINARY_RETENTION", "label": "明显无法正常排尿"},
+            {"value": "VISIBLE_PROLAPSE", "label": "明显阴道/盆腔器官脱出感"},
+            {"value": "SEVERE_PERSISTENT_PAIN", "label": "持续或明显加重的盆腔/会阴疼痛"},
+            {"value": "FECAL_INCONTINENCE", "label": "明显粪便失禁"},
+            {"value": "RECENT_SURGERY", "label": "近期正在手术恢复期"},
+            {"value": "NONE", "label": "以上都没有", "exclusive": true}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "goals",
+      "title": "我的目标",
+      "questions": [
+        {
+          "id": "primaryGoal",
+          "type": "single",
+          "required": true,
+          "title": "你现在最想优先改善什么？",
+          "options": [
+            {"value": "FAT_LOSS", "label": "减脂"},
+            {"value": "MUSCLE_GAIN", "label": "增肌"},
+            {"value": "WAIST_ABS", "label": "腰腹核心"},
+            {"value": "CURVES", "label": "腰臀曲线"},
+            {"value": "POSTURE", "label": "体态"},
+            {"value": "PELVIC", "label": "盆底功能"},
+            {"value": "ENERGY", "label": "体能与活力"},
+            {"value": "GENERAL_WELLNESS", "label": "整体身体状态"}
+          ]
+        }
+      ]
+    }
+  ]
+}
