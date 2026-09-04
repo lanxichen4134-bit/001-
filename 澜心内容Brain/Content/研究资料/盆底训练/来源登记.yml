@@ -1,0 +1,255 @@
+schema_version: 1
+title: 国际盆底肌训练来源登记
+updated_on: 2026-09-04
+public_repository_policy: "Store bibliographic metadata, rights status, verification dates, and canonical links only."
+sources:
+  - id: GL-NICE-NG210
+    kind: clinical_guideline
+    citation: "National Institute for Health and Care Excellence. Pelvic floor dysfunction: prevention and non-surgical management (NG210). 2021, dynamically updated."
+    canonical_url: "https://www.nice.org.uk/guidance/ng210"
+    accessed_on: 2026-09-04
+    metadata_source: "official publisher"
+    rights_status: citation_only
+    license_url: "https://www.nice.org.uk/terms-and-conditions"
+    public_repo_rule: "metadata-and-canonical-link-only"
+    next_review_due: 2027-09-04
+  - id: GL-NICE-NG123
+    kind: clinical_guideline
+    citation: "National Institute for Health and Care Excellence. Urinary incontinence and pelvic organ prolapse in women: management (NG123). 2019, dynamically updated."
+    canonical_url: "https://www.nice.org.uk/guidance/ng123"
+    accessed_on: 2026-09-04
+    metadata_source: "official publisher"
+    rights_status: citation_only
+    license_url: "https://www.nice.org.uk/terms-and-conditions"
+    public_repo_rule: "metadata-and-canonical-link-only"
+    next_review_due: 2027-09-04
+  - id: GL-EAU-FLUTS
+    kind: clinical_guideline
+    citation: "European Association of Urology. EAU Guidelines on Non-neurogenic Female Lower Urinary Tract Symptoms. Annual update."
+    canonical_url: "https://uroweb.org/guidelines/non-neurogenic-female-luts"
+    accessed_on: 2026-09-04
+    metadata_source: "official publisher"
+    rights_status: citation_only
+    license_url: "https://uroweb.org/eau-guidelines/citing-usage-republication"
+    public_repo_rule: "metadata-and-canonical-link-only; no derived material"
+    next_review_due: 2027-09-04
+  - id: GL-ACP-UI-2014
+    kind: clinical_guideline
+    citation: "Qaseem A, Dallas P, Forciea MA, et al. Nonsurgical Management of Urinary Incontinence in Women: A Clinical Practice Guideline From the American College of Physicians. Ann Intern Med. 2014;161(6):429-440. doi:10.7326/M13-2410."
+    canonical_url: "https://doi.org/10.7326/M13-2410"
+    accessed_on: 2026-09-04
+    metadata_source: "Crossref and publisher"
+    rights_status: citation_only
+    license_url: null
+    public_repo_rule: "metadata-and-canonical-link-only"
+    next_review_due: 2027-09-04
+  - id: CS-IUGA-ICS-2017
+    kind: terminology_consensus
+    citation: "Bø K, Frawley HC, Haylen BT, et al. An International Urogynecological Association/International Continence Society joint report on terminology for conservative and nonpharmacological management of female pelvic floor dysfunction. Int Urogynecol J. 2017;28(2):191-213. doi:10.1007/s00192-016-3123-4."
+    canonical_url: "https://doi.org/10.1007/s00192-016-3123-4"
+    accessed_on: 2026-09-04
+    metadata_source: "Crossref and publisher"
+    rights_status: citation_only
+    license_url: null
+    public_repo_rule: "metadata-and-canonical-link-only"
+    next_review_due: 2027-09-04
+  - id: CS-ICS-ASSESSMENT-2021
+    kind: terminology_consensus
+    citation: "Frawley H, Shelly B, Morin M, et al. An International Continence Society report on the terminology for pelvic floor muscle assessment. Neurourol Urodyn. 2021;40(5):1217-1260. doi:10.1002/nau.24658."
+    canonical_url: "https://doi.org/10.1002/nau.24658"
+    accessed_on: 2026-09-04
+    metadata_source: "Crossref and publisher"
+    rights_status: citation_only
+    license_url: null
+    public_repo_rule: "metadata-and-canonical-link-only"
+    next_review_due: 2027-09-04
+  - id: SR-IUC-POP-2022
+    kind: systematic_review
+    citation: "Bø K, Anglès-Acedo S, Batra A, et al. International urogynecology consultation chapter 3 committee 2; conservative treatment of patient with pelvic organ prolapse: Pelvic floor muscle training. Int Urogynecol J. 2022;33(10):2633-2667. doi:10.1007/s00192-022-05324-0."
+    canonical_url: "https://doi.org/10.1007/s00192-022-05324-0"
+    accessed_on: 2026-09-04
+    metadata_source: "Crossref and publisher"
+    rights_status: cc_by_reusable
+    license_url: "https://creativecommons.org/licenses/by/4.0/"
+    public_repo_rule: "link-by-default; any reuse requires attribution, license link, change note, and third-party-material review"
+    next_review_due: 2027-09-04
+  - id: GL-ACOG-CPP-2020
+    kind: clinical_guideline
+    citation: "American College of Obstetricians and Gynecologists. Chronic Pelvic Pain: ACOG Practice Bulletin, Number 218. Obstet Gynecol. 2020;135(3):e98-e109. doi:10.1097/AOG.0000000000003716."
+    canonical_url: "https://doi.org/10.1097/AOG.0000000000003716"
+    accessed_on: 2026-09-04
+    metadata_source: "Crossref and official publisher"
+    rights_status: citation_only
+    license_url: "https://www.acog.org/womens-health/about-acog/permissions"
+    public_repo_rule: "metadata-and-canonical-link-only"
+    next_review_due: 2027-09-04
+  - id: GL-WHO-POSTNATAL-2022
+    kind: clinical_guideline
+    citation: "World Health Organization. WHO recommendations on maternal and newborn care for a positive postnatal experience. 2022."
+    canonical_url: "https://iris.who.int/handle/10665/352658"
+    accessed_on: 2026-09-04
+    metadata_source: "official publisher"
+    rights_status: citation_only
+    license_url: "https://iris.who.int/bitstream/handle/10665/352658/9789240045989-eng.pdf"
+    public_repo_rule: "metadata-and-canonical-link-only; current public repository is not a confirmed NC-SA environment"
+    next_review_due: 2027-09-04
+  - id: GL-AUA-GSM-2025
+    kind: clinical_guideline
+    citation: "Kaufman MR, Ackerman LA, Amin KA, et al. The AUA/SUFU/AUGS Guideline on Genitourinary Syndrome of Menopause. J Urol. 2025;214(3):242-250. doi:10.1097/JU.0000000000004589."
+    canonical_url: "https://doi.org/10.1097/JU.0000000000004589"
+    accessed_on: 2026-09-04
+    metadata_source: "Crossref and official publisher"
+    rights_status: citation_only
+    license_url: "https://www.auanet.org/about-us/media-center/terms-of-use"
+    public_repo_rule: "metadata-and-canonical-link-only; no website-derived material"
+    next_review_due: 2027-09-04
+  - id: RV-COCHRANE-UI-2018
+    kind: systematic_review
+    citation: "Dumoulin C, Cacciari LP, Hay-Smith EJC. Pelvic floor muscle training versus no treatment, or inactive control treatments, for urinary incontinence in women. Cochrane Database Syst Rev. 2018;10:CD005654. doi:10.1002/14651858.CD005654.pub4."
+    canonical_url: "https://doi.org/10.1002/14651858.CD005654.pub4"
+    accessed_on: 2026-09-04
+    metadata_source: "Crossref and publisher"
+    rights_status: citation_only
+    license_url: "https://www.cochrane.org/website-terms-and-conditions"
+    public_repo_rule: "metadata-and-canonical-link-only"
+    next_review_due: 2027-09-04
+  - id: RV-COCHRANE-ANTENATAL-POSTNATAL-2020
+    kind: systematic_review
+    citation: "Woodley SJ, Lawrenson P, Boyle R, et al. Pelvic floor muscle training for preventing and treating urinary and faecal incontinence in antenatal and postnatal women. Cochrane Database Syst Rev. 2020;5:CD007471. doi:10.1002/14651858.CD007471.pub4."
+    canonical_url: "https://doi.org/10.1002/14651858.CD007471.pub4"
+    accessed_on: 2026-09-04
+    metadata_source: "Crossref and publisher"
+    rights_status: citation_only
+    license_url: "https://www.cochrane.org/website-terms-and-conditions"
+    public_repo_rule: "metadata-and-canonical-link-only"
+    next_review_due: 2027-09-04
+  - id: RV-COCHRANE-BIOFEEDBACK-2025
+    kind: systematic_review
+    citation: "Fernandes ACNL, Jorge CH, Weatherall M, et al. Pelvic floor muscle training with feedback or biofeedback for urinary incontinence in women. Cochrane Database Syst Rev. 2025;3:CD009252. doi:10.1002/14651858.CD009252.pub2."
+    canonical_url: "https://doi.org/10.1002/14651858.CD009252.pub2"
+    accessed_on: 2026-09-04
+    metadata_source: "Crossref and publisher"
+    rights_status: citation_only
+    license_url: "https://www.cochrane.org/website-terms-and-conditions"
+    public_repo_rule: "metadata-and-canonical-link-only"
+    next_review_due: 2027-09-04
+  - id: RV-OAB-2020
+    kind: systematic_review
+    citation: "Bø K, Fernandes ACNL, Duarte TB, et al. Is pelvic floor muscle training effective for symptoms of overactive bladder in women? A systematic review. Physiotherapy. 2020;106:65-76. doi:10.1016/j.physio.2019.08.011."
+    canonical_url: "https://doi.org/10.1016/j.physio.2019.08.011"
+    accessed_on: 2026-09-04
+    metadata_source: "Crossref and publisher"
+    rights_status: citation_only
+    license_url: null
+    public_repo_rule: "metadata-and-canonical-link-only"
+    next_review_due: 2027-09-04
+  - id: RV-SEXUAL-FUNCTION-2024
+    kind: systematic_review
+    citation: "Jorge CH, Bø K, Chiazuto Catai C, et al. Pelvic floor muscle training as treatment for female sexual dysfunction: a systematic review and meta-analysis. Am J Obstet Gynecol. 2024;231(1):51-66.e1. doi:10.1016/j.ajog.2024.01.001."
+    canonical_url: "https://doi.org/10.1016/j.ajog.2024.01.001"
+    accessed_on: 2026-09-04
+    metadata_source: "Crossref and publisher"
+    rights_status: citation_only
+    license_url: null
+    public_repo_rule: "metadata-and-canonical-link-only"
+    next_review_due: 2027-09-04
+  - id: RCT-POP-POPPY-2014
+    kind: randomized_controlled_trial
+    citation: "Hagen S, Stark D, Glazener C, et al. Individualised pelvic floor muscle training in women with pelvic organ prolapse (POPPY): a multicentre randomised controlled trial. Lancet. 2014;383(9919):796-806. doi:10.1016/S0140-6736(13)61977-7."
+    canonical_url: "https://doi.org/10.1016/S0140-6736(13)61977-7"
+    accessed_on: 2026-09-04
+    metadata_source: "Crossref and publisher"
+    rights_status: citation_only
+    license_url: null
+    public_repo_rule: "metadata-and-canonical-link-only"
+    next_review_due: 2027-09-04
+  - id: RCT-POSTPARTUM-POP-2015
+    kind: randomized_controlled_trial
+    citation: "Bø K, Hilde G, Staer-Jensen J, et al. Postpartum pelvic floor muscle training and pelvic organ prolapse-a randomized trial of primiparous women. Am J Obstet Gynecol. 2015;212(1):38.e1-7. doi:10.1016/j.ajog.2014.06.049."
+    canonical_url: "https://doi.org/10.1016/j.ajog.2014.06.049"
+    accessed_on: 2026-09-04
+    metadata_source: "Crossref and publisher"
+    rights_status: citation_only
+    license_url: null
+    public_repo_rule: "metadata-and-canonical-link-only"
+    next_review_due: 2027-09-04
+  - id: RCT-BIOFEEDBACK-2020
+    kind: randomized_controlled_trial
+    citation: "Hagen S, Elders A, Stratton S, et al. Effectiveness of pelvic floor muscle training with and without electromyographic biofeedback for urinary incontinence in women: multicentre randomised controlled trial. BMJ. 2020;371:m3719. doi:10.1136/bmj.m3719."
+    canonical_url: "https://doi.org/10.1136/bmj.m3719"
+    accessed_on: 2026-09-04
+    metadata_source: "Crossref and publisher"
+    rights_status: citation_only
+    license_url: "https://creativecommons.org/licenses/by-nc/4.0/"
+    public_repo_rule: "metadata-and-canonical-link-only; current public repository is not a confirmed non-commercial environment"
+    next_review_due: 2027-09-04
+  - id: BK-PTPF-2024
+    kind: professional_textbook
+    citation: "Bø K, Berghmans B, Mørkved S, Van Kampen M, eds. Evidence-Based Physical Therapy for the Pelvic Floor: Bridging Science and Clinical Practice. 3rd ed. Elsevier; 2024. ISBN 978-0-7020-8308-2."
+    canonical_url: "https://shop.elsevier.com/books/evidence-based-physical-therapy-for-the-pelvic-floor/bo/978-0-7020-8308-2"
+    accessed_on: 2026-09-04
+    metadata_source: "official publisher"
+    rights_status: citation_only
+    license_url: "https://www.elsevier.com/about/policies-and-standards/copyright/permissions"
+    public_repo_rule: "metadata-and-canonical-link-only"
+    next_review_due: 2027-09-04
+  - id: BK-FEMALE-UROGYNECOLOGY-2023
+    kind: professional_textbook
+    citation: "Cardozo L, Staskin D, eds. Textbook of Female Urology and Urogynecology: Clinical Perspectives. 5th ed. CRC Press; 2023. ISBN 978-0-367-70014-0."
+    canonical_url: "https://www.routledge.com/Textbook-of-Female-Urology-and-Urogynecology-Clinical-Perspectives/Cardozo-Staskin/p/book/9780367700140"
+    accessed_on: 2026-09-04
+    metadata_source: "official publisher"
+    rights_status: citation_only
+    license_url: "https://www.routledge.com/contacts/rights-and-permissions"
+    public_repo_rule: "metadata-and-canonical-link-only"
+    next_review_due: 2027-09-04
+  - id: BK-WALTERS-KARRAM-2026
+    kind: professional_textbook
+    citation: "Barber MD, Bradley C, eds. Walters & Karram Urogynecology and Reconstructive Pelvic Surgery. 6th ed. Elsevier; 2026. ISBN 978-0-443-28610-0."
+    canonical_url: "https://evolve.elsevier.com/cs/product/9780443286100?role=student"
+    accessed_on: 2026-09-04
+    metadata_source: "official publisher"
+    rights_status: citation_only
+    license_url: "https://www.elsevier.com/about/policies-and-standards/copyright/permissions"
+    public_repo_rule: "metadata-and-canonical-link-only"
+    next_review_due: 2027-09-04
+  - id: PT-IUGA-EXERCISES
+    kind: patient_resource
+    citation: "International Urogynecological Association. Your Pelvic Floor: Pelvic Floor Exercises."
+    canonical_url: "https://www.yourpelvicfloor.org/conditions/pelvic-floor-exercises/"
+    accessed_on: 2026-09-04
+    metadata_source: "official publisher"
+    rights_status: citation_only
+    license_url: "https://www.yourpelvicfloor.org/terms-of-use/"
+    public_repo_rule: "metadata-and-canonical-link-only"
+    next_review_due: 2027-09-04
+  - id: PT-ICS-FACTSHEETS
+    kind: patient_resource
+    citation: "International Continence Society. Fact Sheets."
+    canonical_url: "https://www.ics.org/public/factsheets"
+    accessed_on: 2026-09-04
+    metadata_source: "official publisher"
+    rights_status: citation_only
+    license_url: null
+    public_repo_rule: "metadata-and-canonical-link-only"
+    next_review_due: 2027-09-04
+  - id: PT-AUGS-POSTNATAL
+    kind: patient_resource
+    citation: "American Urogynecologic Society. Voices for PFD: Pelvic Health for New Moms."
+    canonical_url: "https://www.voicesforpfd.org/information-for-new-moms/pelvic-health-for-new-moms/"
+    accessed_on: 2026-09-04
+    metadata_source: "official publisher"
+    rights_status: citation_only
+    license_url: null
+    public_repo_rule: "metadata-and-canonical-link-only"
+    next_review_due: 2027-09-04
+  - id: PT-RCOG-PELVIC-FLOOR
+    kind: patient_resource
+    citation: "Royal College of Obstetricians and Gynaecologists. Pelvic floor health."
+    canonical_url: "https://www.rcog.org.uk/for-the-public/pelvic-floor-health/"
+    accessed_on: 2026-09-04
+    metadata_source: "official publisher"
+    rights_status: citation_only
+    license_url: null
+    public_repo_rule: "metadata-and-canonical-link-only"
+    next_review_due: 2027-09-04
