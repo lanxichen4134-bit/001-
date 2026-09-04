@@ -1,0 +1,29 @@
+{
+  "assessmentVersion": "1.0.0",
+  "riskLevel": "YELLOW",
+  "bodyProfile": {
+    "composition": "腰腹脂肪偏集中",
+    "shape": "H型｜直线型",
+    "posture": ["肋骨外翻倾向", "小腹前突倾向", "呼吸与核心协同不足倾向"],
+    "pelvicFloor": "偏弱型"
+  },
+  "metrics": {
+    "bmi": 23.1,
+    "bmiLevel": "REFERENCE",
+    "waistLevel": "INCREASED",
+    "whr": 0.84,
+    "whrLevel": "REFERENCE",
+    "bodyFatLevel": "REFERENCE",
+    "pelvicWeaknessScore": 5.0,
+    "pelvicTensionScore": 2.0,
+    "pelvicCoordinationScore": 6.0
+  },
+  "priorityActions": ["重新学习呼吸", "恢复核心与盆底协同", "逐步建立支撑与耐力"],
+  "recommendations": {
+    "primary": {"id": "COURSE_PF_SUPPORT", "name": "盆底唤醒与支撑训练"},
+    "secondary": {"id": "COURSE_POSTURE_CORE", "name": "呼吸核心与体态基础课"}
+  },
+  "advisorRequired": false,
+  "professionalEvaluationRecommended": false,
+  "userTags": ["AGE_40_PLUS", "LIFE_POSTPARTUM_GT3Y", "SHAPE_H", "BMI_REFERENCE", "WAIST_INCREASED", "PF_WEAKNESS", "RISK_YELLOW", "RIB_FLARE", "ABDOMEN_PROTRUSION"]
+}
