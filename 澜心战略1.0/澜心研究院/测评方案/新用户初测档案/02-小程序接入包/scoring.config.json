@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "bmi": {
+    "LOW": {"lt": 18.5},
+    "REFERENCE": {"gte": 18.5, "lt": 24.0},
+    "OVERWEIGHT": {"gte": 24.0, "lt": 28.0},
+    "HIGH": {"gte": 28.0}
+  },
+  "waistFemaleCm": {
+    "REFERENCE": {"lt": 80},
+    "INCREASED": {"gte": 80, "lt": 85},
+    "HIGH": {"gte": 85}
+  },
+  "whrFemale": {
+    "REFERENCE": {"lt": 0.85},
+    "HIGH": {"gte": 0.85}
+  },
+  "bodyFatReference": {
+    "enabled": true,
+    "note": "仅作产品参考，不作为医学诊断；建议由医学顾问复核阈值。",
+    "bands": [
+      {"ageRanges": ["LT25", "25_29", "30_34", "35_39"], "lowLt": 21, "referenceLt": 33},
+      {"ageRanges": ["40_44", "45_49", "50_59"], "lowLt": 23, "referenceLt": 34},
+      {"ageRanges": ["60_PLUS"], "lowLt": 24, "referenceLt": 36}
+    ]
+  },
+  "pelvicFloor": {
+    "weaknessFields": {"pf01StressLeak": 1.0, "pf02Urgency": 0.5, "pf05Heaviness": 0.75, "pf11ContractionSense": 1.0, "pf14Endurance": 1.0},
+    "tensionFields": {"pf04VoidingDifficulty": 1.0, "pf07ConstipationStrain": 0.75, "pf09PelvicPain": 1.25, "pf10InsertionPain": 1.25, "pf12RelaxSense": 1.25},
+    "coordinationFields": {"pf11ContractionSense": 1.0, "pf12RelaxSense": 1.0, "pf14Endurance": 0.5},
+    "compensationPoints": {"HOLD_BREATH": 1, "SQUEEZE_GLUTES": 1, "SQUEEZE_THIGHS": 1, "BRACE_ABS": 1, "NECK_SHOULDER_TENSION": 1, "UNSURE": 1},
+    "thresholds": {"weakness": 4, "tension": 4, "coordination": 3, "mixedWeakness": 4, "mixedTension": 4}
+  },
+  "risk": {
+    "RED_if_any_red_flag_except": ["RECENT_SURGERY"],
+    "RED_if": {"pf06ProlapseSensation_gte": 3, "pf08BowelControl_gte": 3, "pf09PelvicPain_gte": 3, "pf10InsertionPain_gte": 3},
+    "ORANGE_if": {"lifeStageIn": ["PREGNANT", "POSTPARTUM_LT6W"], "recentSurgeryFlag": true, "impactScoreGte": 7, "pelvicPatternIn": ["TENSION", "MIXED"]},
+    "YELLOW_if": {"pelvicPatternIn": ["WEAKNESS", "COORDINATION"], "impactScoreGte": 4}
+  }
+}
