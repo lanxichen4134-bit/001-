@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "courses": {
+    "COURSE_MORNING": {"name": "元气女人晨练", "type": "support", "cta": "开始我的专属训练"},
+    "COURSE_MAGIC_ABS": {"name": "魔力腹·腰腹核心计划", "type": "primary", "cta": "查看训练计划"},
+    "COURSE_CURVE": {"name": "双C腰 × M蜜桃臀曲线计划", "type": "primary", "cta": "查看训练计划"},
+    "COURSE_POSTURE_CORE": {"name": "呼吸核心与体态基础课", "type": "primary", "cta": "查看基础训练"},
+    "COURSE_PF_SUPPORT": {"name": "盆底唤醒与支撑训练", "type": "primary", "cta": "查看盆底训练"},
+    "COURSE_PF_RELAX": {"name": "盆底放松 × 呼吸协调基础", "type": "primary", "cta": "查看基础练习"},
+    "ADVISOR_BODY_CONSULT": {"name": "澜心健康顾问身体咨询", "type": "advisor", "cta": "咨询澜心健康顾问"},
+    "PROFESSIONAL_EVALUATION": {"name": "专业医疗/盆底康复评估", "type": "safety", "cta": "查看专业评估建议"}
+  },
+  "priority": ["SAFETY", "PELVIC_FLOOR", "POSTURE_CORE", "BODY_COMPOSITION", "CURVE_SHAPING", "MAINTENANCE"]
+}
