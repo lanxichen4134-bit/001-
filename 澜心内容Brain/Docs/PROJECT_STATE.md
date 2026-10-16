@@ -6,14 +6,21 @@ branch: main
 remote: origin
 visibility: public
 stage: V0.1 已初始化；首条微信视频号档案已完成基于本地证据的补录；新增《澜心1.0选题SOP》作为待真实直播与评论数据验证的执行规则
-last_updated: 2026-09-04T23:15:42+08:00
-last_execution: 已建立国际医学证据研究路径 V1.0；停止个人 NEJM 订阅作为主路径，改用 PubMed 自动检索、国际指南、开放获取与 NSTL 按篇文献传递的组合，并保持 citation_only 管理
-last_remote_verification: 2026-09-04 新用户初测档案已通过 GitHub Contents/Git Data API 写入 main；本次 PROJECT_STATE 更新完成后以返回的 commit SHA 为最新远端状态。
+last_updated: 2026-10-16T19:54:00+08:00
+last_execution: 通过GitHub连接同步小红书对标与真实用户选题参考，补充Brain、选题SOP与内容入口；仅公开安全方法文本，未采集或公开真实评论
+last_remote_verification: 本次采用GitHub Git Data API提交main；以本次提交SHA及写后远端读回为验证依据，不涉及本地副本同步
 ---
 
 # 当前目标
 
 在不复制旧 Obsidian Vault、不写入旧远端、不过度收集敏感资料的前提下，长期维护可使用的澜心内容 Brain，并以 GitHub origin/main 为唯一正式事实源。
+
+# 2026-10-16最新增量
+
+- 已按澜心明确要求新增[小红书对标账号与真实用户选题执行参考](XIAOHONGSHU_TOPIC_RESEARCH_REFERENCE_V1.0.md)，作为后续选题研究方向；接入Brain内容方向、选题SOP与内容共创入口，保留既有内容支柱、比例、历史资料和待办。
+- 五类对标与六方向关键词已整理；候选账号的小红书身份和适配性仍待站内核验，生活搜索句不是实际采集原话。
+- 下一步由运营在受控记录中完成真实采样，再按既有SOP筛题；10账号/24篇等仅为可调整试跑建议，非统计代表性样本。本次没有完成实际评论采集，也未自动发布。
+- 本次仅提交公开安全的方法与索引，未提交真实健康评论、用户身份、截图、私密经历或可追踪个人的证据链接；不写入旧Obsidian远端。
 
 # 当前已经完成
 
