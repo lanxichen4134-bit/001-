@@ -1,27 +1,26 @@
-# Codex 任务执行规则｜澜心内容 Brain
+# Codex 任务执行规则
+
+本文件是执行入口摘要；完整规则以根目录[AGENTS.md](../../AGENTS.md)和[一句话执行规范](../Docs/ONE_SENTENCE_EXECUTION.md)为准，不另维护个人事实或第二套任务系统。
 
 ## 开始前
 
-1. 读取根目录 AGENTS.md、Docs/PROJECT_STATE.md 和本次相关 Brain/原始资料。
-2. 执行 git rev-parse --show-toplevel、git branch --show-current、git remote -v、git status --short。
-3. 确认远端仅为 https://github.com/lanxichen4134-bit/001-.git；不向旧 Obsidian Vault 或其他仓库写入、提交或推送。
-4. 有无关未提交修改、远端不符、真实冲突、需覆盖原话或需处理敏感材料时，停止危险动作并报告。
+读取AGENTS、PROJECT_STATE、DECISIONS、SYSTEM_MAP及任务相关Brain、原始资料和已有内容卡。检查仓库根目录、分支、remote、工作区，执行git fetch origin后比较本地与origin/main。唯一远端为 https://github.com/lanxichen4134-bit/001-.git，正式分支main。
+
+有无关未提交修改、本地独有提交、分叉、错误远端或需覆盖原话时停止相关写入，保护并报告；只有干净且无本地独有提交或分叉时才能快进同步。公开可见性每次提交前重新核实。旧Obsidian只读，不向其他远端推送。
 
 ## 执行中
 
-- 最小修改、保留原话、一份正文一个主位置。
-- 优先索引既有资产，不复制 Vault 的完整正文、原始聊天、语音、学员资料或大文件。
-- 四类长期 Brain（身份、价值观、经典观点、禁用表达）只有澜心明确确认后才能升级。
-- 科学事实、推测、文化解释和个人体验/案例分层，不虚构来源或数据。
-- 公开远端只允许公开安全、去标识化文本；绝不写入凭据、Token、Cookie、私钥、个人隐私或未公开经营数据。
+理解一句话意图，资料和权限具备就做，不让澜心填写技术表。最小修改、原话保护、一份正文一个主位置；按最新明确输入和已确认Brain处理事实，AI建议不自动升级。新长期规则需具体确认依据、日期和范围，已获授权不用重问。不能安全公开的正文不提交。
 
-## 结束前的强制闭环
+研究依[研究参考](../Docs/XIAOHONGSHU_TOPIC_RESEARCH_REFERENCE_V1.0.md)与[报告标准](../Docs/RESEARCH_REPORT_STANDARD.md)；写作直接接现有Content入口；Work交接使用[中文入口](09_Work执行入口.md)。工具实际未联通就交付可转交说明，不声称执行完成。
 
-1. 最小更新 Docs/PROJECT_STATE.md：时间、last_execution、当前完成、待办、阻塞和远端验证状态。
-2. 只使用 git add -- <实际修改路径> 暂存；严禁 git add . 或 git add -A。
-3. 使用清晰提交信息，例如 content-brain: initialize V0.1 structure。
-4. 执行 git push origin <当前分支>；不得使用 force 或 force-with-lease。
-5. 读取本地 HEAD 与远端分支 SHA，必须确认 Local HEAD = Remote HEAD。
-6. 最终回报：本次完成、实际读取、实际修改、原话保护、Brain变化、仓库/分支/commit/本地与远端 SHA、push 和真实待办。
+## 结束前
 
-若 GitHub 要求认证，在交互终端中让澜心直接输入；不显示、不保存、不提交 Token。
+1. 最小更新PROJECT_STATE的实际动作、完成、待办、限制及验证状态。
+2. 正式源变更后由Docs/framework_tools.py生成受影响阅读快照，再运行检查；不把本地快照更新说成Project已上传。
+3. 审查.gitignore、公开安全、准确修改清单和staged diff，只用git add -- <本次实际路径>。
+4. 使用content-brain:前缀提交；普通git push origin main，不强推。
+5. 比较git rev-parse HEAD与git ls-remote origin refs/heads/main，真实确认相等。状态文件可记录提交前已验证基线，最终新SHA写执行回执，不能预写成功或循环自引用。
+6. 用中文报告结果、测试边界、实际修改、仓库/分支/commit和SHA一致性；推送失败如实说明。
+
+认证由用户在正规交互界面完成，不显示、不保存、不提交任何凭据。禁止破坏性清理或覆盖无关工作。

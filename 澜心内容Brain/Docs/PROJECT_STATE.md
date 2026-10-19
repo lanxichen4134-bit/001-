@@ -5,15 +5,26 @@ repository: https://github.com/lanxichen4134-bit/001-.git
 branch: main
 remote: origin
 visibility: public
-stage: V0.1 已初始化；首条微信视频号档案已完成基于本地证据的补录；新增《澜心1.0选题SOP》作为待真实直播与评论数据验证的执行规则
+stage: V0.1 Brain保持；一句话工作系统基础框架1.0已建立，规则模拟与文件检查已运行，真实Work研究及跨环境配置待验证
 last_updated: 2026-10-19
-last_execution: 确认当前项目目录为空且不含Git仓库后，从唯一正式仓库重新克隆main，恢复全部91个受版本管理文件及Git历史；已读取AGENTS.md并核验工作副本完整性，本次仅追加恢复记录
-last_remote_verification: 2026-10-19恢复基线d297b9126c4d6bbcddb3eb684aa2621a79c22daa已通过fetch与ls-remote核验，Local HEAD = origin/main = Remote HEAD；此字段记录恢复时已验证的基线，本次恢复记录提交的最终SHA以执行报告为准
+last_execution: 2026-10-19升级统一入口、自然语言执行、双路径内容链路、三层报告、Work入口与阅读快照，完成规则模拟和一致性检查；已生成本地提交fd6a099，HTTPS推送因缺少命令行凭据失败；澜心已明确授权改用连接器同步并保留本地提交，最终远端结果以执行回执为准
+last_remote_verification: 2026-10-19施工前基线24f0b34f84dd26ea7455f22fbe5f1bfc6613e569经fetch确认HEAD与origin/main无差异；最终新提交以执行回执的ls-remote核验为准，不预写推送成功
 ---
 
 # 当前目标
 
 在不复制旧 Obsidian Vault、不写入旧远端、不过度收集敏感资料的前提下，长期维护可使用的澜心内容 Brain，并以 GitHub origin/main 为唯一正式事实源。
+
+# 2026-10-19基础框架升级
+
+- 已建立一句话执行规范、Chat/Work/Codex交接与回执、双路径内容入口和三层报告标准，保留唯一内容状态与正式Content/Publish管理；细节见[验收记录](FRAMEWORK_ACCEPTANCE_2026-10-19.md)。
+- 已实际读取两份V2 Word方案和Markdown报告模板，继承能力验证、五门槛、连续观察/去重、三平台判断、风险复审与完整论证；原文件未修改、未上传公开仓库。附件引用的录音、原截图、Drive报告、平台条款未在本轮重读。
+- 修正旧SOP与本轮要求的冲突：历史主题分类不覆盖Brain四支柱；数量和评分不凌驾证据；明确写作允许直接成稿；同一内容按平台条件适配。Brain九文件、原话、历史内容与发布数据保持原样。
+- 已提供Work中文入口和Project/Work一次性配置说明；01、06、07、08阅读快照按正式源生成并校验，02—05沿用且核对原有Brain未变化。没有代替用户配置线上Project、上传资料或启动自动化。
+- 已在当前环境运行文件与规则一致性检查，并对8个指定自然语言情境完成同会话规则模拟；未进行真实小红书采集、跨会话浏览复验、自动跨工具交接、拍摄或发布。模拟通过不等于这些能力已验证。
+- 未来待办：在目标Project配置阅读资料并读回版本；按实际授权做Work最小研究能力测试和独立会话复验；用真实直播/评论检验选题与报告价值；逐步补充已确认个人写作和平台细则。既有待办继续有效。
+- 普通HTTPS推送因本机缺少GitHub登录凭据失败；澜心明确选择“改用已连接的GitHub工具，并保留本地提交”。本地fd6a09959effcd7f2ef36b6f30b95b6da3575ed5已由codex/framework-upgrade-local-20261019保留；该保护分支后续可快进包含同步记录。连接器按原main父提交新建完整文件树并带预期SHA快进更新，取回后仅在文件树相同、工作区干净时对齐本地main。此为本次明确授权的替代路径，不改变后续普通Git推送规则。
+- GitHub元数据本轮核实为公开仓库；本次只提交公开安全框架与检查工具。提交前基线为24f0b34f84dd26ea7455f22fbe5f1bfc6613e569，最终Commit与Local HEAD/Remote HEAD核验见执行回执。
 
 # 2026-10-19本地恢复
 
@@ -85,6 +96,8 @@ last_remote_verification: 2026-10-19恢复基线d297b9126c4d6bbcddb3eb684aa2621a
 参见 Docs/DECISIONS.md。
 
 # 最近一次 Codex / GitHub 执行
+
+2026-10-19：完成本轮基础框架施工及规则模拟、文件检查；本次版本提交/推送和最终SHA以执行回执为准，未将平台研究或Project配置记为完成。
 
 2026-10-19：从GitHub正式 `main` 恢复当前电脑的空项目目录，核验91个受版本管理文件及Git历史；沿用仓库现有 `AGENTS.md` 和多电脑协作规则，仅追加本次恢复记录。
 
