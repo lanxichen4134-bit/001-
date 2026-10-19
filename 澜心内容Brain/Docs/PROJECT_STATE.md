@@ -6,14 +6,21 @@ branch: main
 remote: origin
 visibility: public
 stage: V0.1 已初始化；首条微信视频号档案已完成基于本地证据的补录；新增《澜心1.0选题SOP》作为待真实直播与评论数据验证的执行规则
-last_updated: 2026-10-17T12:22:00+08:00
-last_execution: 通过GitHub连接归档憋尿与膀胱功能误区澄清选题，更新内容入口；原始命题与医学纠正分列，并按追加要求附口播初稿；未采集真实用户需求，未发布
-last_remote_verification: 本次采用GitHub Git Data API提交main；以本次提交SHA及写后远端读回为验证依据，不涉及本地副本同步
+last_updated: 2026-10-19
+last_execution: 确认当前项目目录为空且不含Git仓库后，从唯一正式仓库重新克隆main，恢复全部91个受版本管理文件及Git历史；已读取AGENTS.md并核验工作副本完整性，本次仅追加恢复记录
+last_remote_verification: 2026-10-19恢复基线d297b9126c4d6bbcddb3eb684aa2621a79c22daa已通过fetch与ls-remote核验，Local HEAD = origin/main = Remote HEAD；此字段记录恢复时已验证的基线，本次恢复记录提交的最终SHA以执行报告为准
 ---
 
 # 当前目标
 
 在不复制旧 Obsidian Vault、不写入旧远端、不过度收集敏感资料的前提下，长期维护可使用的澜心内容 Brain，并以 GitHub origin/main 为唯一正式事实源。
+
+# 2026-10-19本地恢复
+
+- 检查时当前项目目录为空，根目录 `AGENTS.md`、项目文件及 `.git` 均不存在；目录内无需要保护的本地残留文件或未推送提交。目录被清空的原因尚未核实。
+- 从唯一正式仓库 `https://github.com/lanxichen4134-bit/001-.git` 重新克隆 `main`，恢复全部91个受版本管理文件及Git历史，包括正式规则、Brain、Content、Docs、Inbox、Reviews、Prompts、Project资料同步包、门店经营资料与测评小程序接入包。
+- 恢复基线为 `d297b9126c4d6bbcddb3eb684aa2621a79c22daa`；已通过 `git fsck --full`、文件差异检查、`fetch` 与远端SHA核验，确认恢复后的工作区干净且与GitHub一致。本次仅更新状态记录，保留全部既有内容、规则及待办。
+- 本次恢复范围为GitHub已保存的正式资产；未入库的原始媒体、后台截图及其他受控本地资料不包含在内，仍需从其原存储位置取得。
 
 # 2026-10-17最新增量
 
@@ -79,6 +86,8 @@ last_remote_verification: 本次采用GitHub Git Data API提交main；以本次�
 
 # 最近一次 Codex / GitHub 执行
 
+2026-10-19：从GitHub正式 `main` 恢复当前电脑的空项目目录，核验91个受版本管理文件及Git历史；沿用仓库现有 `AGENTS.md` 和多电脑协作规则，仅追加本次恢复记录。
+
 2026-09-04：建立 `Content/研究资料/盆底训练/` 专题目录，新增资料目录说明与来源登记；经公开仓库版权核验后，国际指南、论文和书籍以 DOI/ISBN、官方入口、许可状态与复核日期归档，未复制来源专属结论、受版权保护全文或敏感资料。
 
 2026-09-04：创建 `澜心战略1.0/澜心研究院/测评方案/新用户初测档案/`，归档《澜心社女性身体状态测评1.0》完整测评正文、小程序接入 README、API/数据库说明、Codex执行指令和 ZIP 工程包；采用健康教育与运动分流定位，不存储真实用户健康数据。
@@ -96,6 +105,8 @@ last_remote_verification: 本次采用GitHub Git Data API提交main；以本次�
 2026-08-24：完成视频内容档案系统的规则、模板、Prompt、公开安全边界与系统接入；视频系统提交 `9b62356ae7ec3c62ba3a4e116ed1ec8c4fca8e9a` 正式推送至 `origin/main`。
 
 # 最近一次 GitHub 远端验证
+
+2026-10-19：恢复基线 `d297b9126c4d6bbcddb3eb684aa2621a79c22daa` 已验证 Local HEAD = origin/main = Remote HEAD。该SHA为恢复记录写入前的已验证提交；本次恢复记录提交的最终远端核验结果见执行报告。
 
 2026-09-04：`澜心战略1.0/澜心研究院/测评方案/新用户初测档案/` 已写入 `main`；包含目录说明、完整测评正文、小程序接入 README、API/数据库说明、Codex执行指令及 ZIP 工程包。以本次 PROJECT_STATE 更新返回的 commit SHA 作为最新远端状态记录。
 
