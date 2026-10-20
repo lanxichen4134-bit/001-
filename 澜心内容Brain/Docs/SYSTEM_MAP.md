@@ -1,6 +1,6 @@
 ---
 title: 澜心内容 Brain 系统地图
-date: 2026-10-19
+date: 2026-10-21
 status: active
 ---
 
@@ -53,6 +53,10 @@ flowchart TD
 交接与回执主规则见[一句话执行规范](ONE_SENTENCE_EXECUTION.md)，Work使用[执行入口](../Prompts/09_Work执行入口.md)。资料不可见时提供公开安全的必要摘录和索引；缺关键材料如实停依赖步骤。只有说明生成、实际发送、接收、结果返回和复核各自有证据，才可报告相应状态。
 
 ## 外部资产
+
+小红书研究专项当前为V2.1：[研究后台](XIAOHONGSHU_TOPIC_RESEARCH_REFERENCE_V1.0.md)负责范围、搜索、B1/B2/B3、去重和停止；[模板说明](XIAOHONGSHU_RESEARCH_TEMPLATES_V2.1.md)管理04矩阵及05空白工作簿；[报告标准](RESEARCH_REPORT_STANDARD.md)把证据转成中文完整理由与Chat候选卡；[专项验收](XIAOHONGSHU_V2.1_ACCEPTANCE_2026-10-21.md)记录版本和实际测试。复用当前Docs、Prompts与Content，不建立第二套选题库。账号B只是可选执行环境，原始研究工作簿留受控位置。
+
+专项状态分列“已建立规则、已配置工具、已验证访问能力、已完成真实研究”。目前规则和本地模板检查已实施；目标Work配置、真实浏览及独立复验、真实研究均未验证。资料生成与Git同步不能代替后三项。
 
 旧Obsidian Vault为只读辅助来源，参见[既有资产地图](EXISTING_ASSET_MAP.md)。原始研究、聊天、健康资料、音视频、截图和未公开经营资料留在获准受控位置，不写入公开GitHub，也不默认跨账号传递。jingyingxitong仍是受控资料来源，本轮未读取或修改。
 

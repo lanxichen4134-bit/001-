@@ -16,3 +16,8 @@ exports/
 LocalMedia/
 DataScreenshots/
 TranscriptionCache/
+# Actual research files stay in authorized controlled storage.
+ResearchRuns/
+*.xlsx
+!澜心内容Brain/Docs/研究模板/04_六大主题与五类对标账号搜索矩阵.xlsx
+!澜心内容Brain/Docs/研究模板/05_评论研究数据与选题判断工作簿.xlsx

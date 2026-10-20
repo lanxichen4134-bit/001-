@@ -90,6 +90,6 @@
 - 不假设三个环境共享资料、登录或权限。按一句话规范生成可执行交接与结果回执；只有实际发送并取得结果才报告相应状态，交接文案生成不等于已执行。
 - 外部用户研究与澜心自身素材进入同一个 Content；内容状态唯一链见 Docs/VIDEO_CONTENT_SYSTEM.md，研究证据层级不得写入 Content status。
 - 研究报告遵守 [三层报告标准](澜心内容Brain/Docs/RESEARCH_REPORT_STANDARD.md)：先给结论，再以自然语言解释完整判断理由，最后提供可核验的证据附录。事实、分析、推测、替代解释及推翻条件都要可见，不要求模型隐性推理。
-- 研究方法沿用 Docs/XIAOHONGSHU_TOPIC_RESEARCH_REFERENCE_V1.0.md；五项硬门槛逐项判断，总分不能抵消风险。六方向仅为候选，三个计划平台逐一核验。
+- 小红书评论研究启动前必读 Docs/XIAOHONGSHU_TOPIC_RESEARCH_REFERENCE_V1.0.md（原位升级为V2.1）与 Docs/XIAOHONGSHU_RESEARCH_TEMPLATES_V2.1.md：按B1/B2/B3及本轮累计预算执行，扩量须明确授权；空白模板可公开，填充工作簿只进受控存储。五项硬门槛逐项判断，总分不能抵消风险。六主题五来源仅是路线矩阵，三个计划平台逐一核验。
 - Work 中文入口为 Prompts/09_Work执行入口.md。Project资料同步包为正式源的阅读副本；修改源后运行 Docs/framework_tools.py 更新和检查，未实际上传/配置不得声称已同步。
 - 未来个人偏好先按本次适用或候选保存；澜心明确要求长期采用后再更新对应 Brain 主文件，不增加第二套个人事实库。

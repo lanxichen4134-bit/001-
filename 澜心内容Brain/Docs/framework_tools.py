@@ -15,7 +15,7 @@ from urllib.parse import quote, unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[2]
 BRAIN = ROOT / '澜心内容Brain'
-BASELINE = '24f0b34f84dd26ea7455f22fbe5f1bfc6613e569'
+BASELINE = '1b307b502b0cc6549861bd835cf96438d686c63d'
 REMOTE = 'https://github.com/lanxichen4134-bit/001-.git'
 READING = BRAIN / 'Project资料同步包'
 SPECS = {
@@ -25,6 +25,7 @@ SPECS = {
     '08_一句话执行与研究协作.md': [
         ('Docs/ONE_SENTENCE_EXECUTION.md', None),
         ('Docs/XIAOHONGSHU_TOPIC_RESEARCH_REFERENCE_V1.0.md', None),
+        ('Docs/XIAOHONGSHU_RESEARCH_TEMPLATES_V2.1.md', None),
         ('Docs/RESEARCH_REPORT_STANDARD.md', None),
         ('Content/README_内容共创流程.md', None),
         ('Prompts/09_Work执行入口.md', None),
@@ -86,7 +87,8 @@ def portable_links(text, source):
 
 def render(name):
     chunks = ['---', 'snapshot_notice: 正式源的生成阅读副本，不在此单独改规则；尚未证明目标Project已上传。',
-              'framework_version: 1.0', 'source_branch: origin/main', 'source_files:']
+              'framework_version: 1.0', 'research_module_version: 2.1',
+              'source_branch: origin/main', 'source_files:']
     for rel, _ in SPECS[name]:
         path = BRAIN / rel
         chunks.extend([f'  - path: 澜心内容Brain/{rel}', f'    sha256: {hashlib.sha256(path.read_bytes()).hexdigest()}'])
@@ -197,8 +199,14 @@ def check():
     for i in range(1, 9):
         expect(f'### 情境{i}｜' in acceptance, f'missing recorded simulation {i}')
     expect('同一会话' in acceptance and '未进行真实平台' in acceptance, 'simulation boundary missing')
+    research_acceptance = (BRAIN / 'Docs/XIAOHONGSHU_V2.1_ACCEPTANCE_2026-10-21.md').read_text()
+    for i in range(1, 11):
+        expect(f'### 情境{i}｜' in research_acceptance, f'missing research simulation {i}')
+    template_check = subprocess.run([sys.executable, str(BRAIN / 'Docs/research_template_audit.py'), 'check'],
+                                    cwd=ROOT, capture_output=True, text=True)
+    expect(template_check.returncode == 0, 'template audit: ' + template_check.stdout + template_check.stderr)
     ignore = (ROOT / '.gitignore').read_text()
-    for token in ('.env', 'private/', 'raw/', 'LocalMedia/', 'DataScreenshots/', 'TranscriptionCache/'):
+    for token in ('.env', 'private/', 'raw/', 'LocalMedia/', 'DataScreenshots/', 'TranscriptionCache/', '*.xlsx', 'ResearchRuns/'):
         expect(token in ignore, f'privacy ignore missing: {token}')
     whitespace = subprocess.run(['git', 'diff', '--check', BASELINE], cwd=ROOT, capture_output=True, text=True)
     expect(whitespace.returncode == 0, 'git diff whitespace check failed: ' + whitespace.stdout)
@@ -206,7 +214,7 @@ def check():
         for failure in failures:
             print('FAIL:', failure)
         return 1
-    print(f'PASS: {len(SPECS)} generated snapshots; {count} protected original assets; 4 unchanged compact fact snapshots; {len(changed)} changed/new files; links, privacy patterns, state chain, report contract, 8 simulation records and diff checks.')
+    print(f'PASS: {len(SPECS)} generated snapshots; {count} protected original assets; 4 unchanged compact fact snapshots; {len(changed)} changed/new files; links, privacy patterns, state chain, report contract, 8 framework/10 research simulation records, public templates and diff checks.')
     print('LIMIT: static checks and recorded same-session simulations; no Work/browser, upload, medical/platform approval or publishing verified. Manual staged review still required.')
     return 0
 
@@ -218,7 +226,7 @@ def self_test():
     assert missing_links(ROOT / 'AGENTS.md', '[bad](missing-framework-test-file.md)')
     assert not missing_links(ROOT / 'AGENTS.md', '[ok](AGENTS.md)')
     state = selection(BRAIN / 'Docs/PROJECT_STATE.md', '<project_state>')
-    assert '当前阶段' in state and '最近动作' in state and '# 2026-10-19基础框架升级' in state
+    assert '当前阶段' in state and '最近动作' in state and '# 2026-10-21小红书专项升级' in state
     for name in SPECS:
         expected = render(name)
         assert snapshot_matches(name, expected)
