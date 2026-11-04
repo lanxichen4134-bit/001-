@@ -16,6 +16,8 @@ exports/
 LocalMedia/
 DataScreenshots/
 TranscriptionCache/
+# Original course and livestream transcript archives stay local.
+/课程+直播回放文本/
 # Actual research files stay in authorized controlled storage.
 ResearchRuns/
 *.xlsx

@@ -30,6 +30,11 @@ SPECS = {
         ('Content/README_内容共创流程.md', None),
         ('Prompts/09_Work执行入口.md', None),
     ],
+    '09_短视频表达与写作试用.md': [
+        ('Docs/LANXIN_VOICE_RESEARCH_V0.1.md', None),
+        ('Docs/LANXIN_SHORT_VIDEO_ADAPTATION_V0.1.md', None),
+        ('Prompts/03_内容共创_首条Prompt.md', None),
+    ],
 }
 STATES = {'raw_idea', 'discussing', 'idea_clear', 'structure_ready', 'drafting', 'approved', 'published', 'reviewed'}
 CHAIN = 'raw_idea → discussing → idea_clear → structure_ready → drafting → approved → published → reviewed'
@@ -226,7 +231,9 @@ def self_test():
     assert missing_links(ROOT / 'AGENTS.md', '[bad](missing-framework-test-file.md)')
     assert not missing_links(ROOT / 'AGENTS.md', '[ok](AGENTS.md)')
     state = selection(BRAIN / 'Docs/PROJECT_STATE.md', '<project_state>')
-    assert '当前阶段' in state and '最近动作' in state and '# 2026-10-21小红书专项升级' in state
+    assert '当前阶段' in state and '最近动作' in state
+    dated_sections = re.findall(r'^# \d{4}-\d{2}-\d{2}[^\n]*', state, re.M)
+    assert len(dated_sections) == 1
     for name in SPECS:
         expected = render(name)
         assert snapshot_matches(name, expected)
@@ -245,6 +252,6 @@ if __name__ == '__main__':
     if command == 'sync':
         for name in SPECS:
             (READING / name).write_text(render(name))
-        print('Generated 4 reading files locally. No upload or external settings changed.')
+        print(f'Generated {len(SPECS)} reading files locally. No upload or external settings changed.')
         sys.exit(0)
     sys.exit(check() if command == 'check' else self_test())
