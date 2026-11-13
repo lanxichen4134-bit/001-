@@ -18,6 +18,16 @@ BRAIN = ROOT / '澜心内容Brain'
 # Reviewed official baseline for the 2026-11-13 feedback and report upgrade.
 BASELINE = '0088ca49a365123c1b84579c6923a2238e318991'
 APPROVED_PROTECTED_CHANGES = {
+    # YouTube 1.2: six drafts, a linked prior version, and two public research sources.
+    '澜心内容Brain/Content/研究资料/YouTube国际研究/2026-11-14_选题与原创文案集V1.2.md',
+    '澜心内容Brain/Content/研究资料/YouTube国际研究/2026-11-14_精品长课程学习笔记V1.2.md',
+    '澜心内容Brain/Content/视频档案/2026/C20261105-011.md',
+    '澜心内容Brain/Content/视频档案/2026/C20261105-011_V02.md',
+    '澜心内容Brain/Content/视频档案/2026/C20261113-001_V03.md',
+    '澜心内容Brain/Content/视频档案/2026/C20261114-001.md',
+    '澜心内容Brain/Content/视频档案/2026/C20261114-002.md',
+    '澜心内容Brain/Content/视频档案/2026/C20261114-003.md',
+    '澜心内容Brain/Content/视频档案/2026/C20261114-004.md',
     # YouTube 1.1: reviewed report and three draft versions.
     '澜心内容Brain/Content/研究资料/YouTube国际研究/2026-11-13_完整研究与执行报告1.1.md',
     '澜心内容Brain/Content/视频档案/2026/C20261113-001_V02.md',

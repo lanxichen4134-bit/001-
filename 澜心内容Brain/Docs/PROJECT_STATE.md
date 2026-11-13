@@ -5,11 +5,17 @@ repository: https://github.com/lanxichen4134-bit/001-.git
 branch: main
 remote: origin
 visibility: public
-stage: "YouTube 研究与原创转化 1.1，完成中文阅读版与三份试读稿"
-last_updated: "2026-11-13"
-last_execution: "复用首轮来源，核读五条短片方向的对应文本和两场长课，归档 Word 生成依据与原创稿"
-last_remote_verification: "开工核对 GitHub main 为 59f3b50f4e4da7b752db6914a44deb2090ff3210，最终读回见交付回执"
+stage: "YouTube V1.2，六篇三分钟原创试读稿与两堂长课学习笔记"
+last_updated: "2026-11-14"
+last_execution: "核读八条短片及两堂长课同集文字，完成六篇口播、中文 Word 与公开安全归档"
+last_remote_verification: "开工核对 GitHub main 为 a5b7781f76623abfb4c1abc8f3ece0a1cc43c920；最终远端读回见交付回执"
 ---
+
+# 2026-11-14｜YouTube V1.2 完整拍摄文案与课程备课
+
+- [文案集 V1.2 正式源](../Content/研究资料/YouTube国际研究/2026-11-14_选题与原创文案集V1.2.md)对应 YTR-20261114-03。八条短片实读完整同集文字，另读一条时长待核的对应文字。七条同频道 TED 普通短片建立一组对照，覆盖三条研究对象。采用作者网站留言七条，YouTube 评论及音画听审均为零。
+- 完成六份 drafting，两个原 ID 升稿、四个新 ID。先读位置表达和倾听，三篇健康稿待专业审校。V1.1 保留。Word 由同一批源稿生成，受控交付。本人试读、实际计时、线上 Project 上传与 Chat／Work 独立读回均待落实，无发布动作。
+- [两堂长课学习笔记](../Content/研究资料/YouTube国际研究/2026-11-14_精品长课程学习笔记V1.2.md)覆盖官方文字 9 页和 8 页及问答。课程成果限备课。已写明影音、评论和图表接续事项。
 
 # 2026-11-13｜YouTube 1.1 研究与原创转化
 
