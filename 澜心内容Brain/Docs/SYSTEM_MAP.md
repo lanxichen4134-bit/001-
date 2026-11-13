@@ -61,3 +61,7 @@ flowchart TD
 旧Obsidian Vault为只读辅助来源，参见[既有资产地图](EXISTING_ASSET_MAP.md)。原始研究、聊天、健康资料、音视频、截图和未公开经营资料留在获准受控位置，不写入公开GitHub，也不默认跨账号传递。jingyingxitong仍是受控资料来源，本轮未读取或修改。
 
 GitHub origin/main是本项目唯一正式版本源；Project/Work的阅读资料只从它派生。四支柱和比例来自Brain/04，事实不能因重复出现在同步包而获得更高确认等级。
+
+## YouTube 国际研究模块
+
+[规则与两条路线](YOUTUBE_RESEARCH_V1.0.md) → [来源、中文总览和逐条报告](../Content/研究资料/YouTube国际研究/README_YouTube国际优质内容研究总览.md) → [同一 Content 或已有课程入口](../Content/README_内容共创流程.md)。Chat/Work 读阅读包10；Codex 维护正式源。YouTube 不复用小红书采样或统计，两个来源可共同支持同一个 Content。

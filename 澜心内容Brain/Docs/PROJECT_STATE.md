@@ -5,11 +5,17 @@ repository: https://github.com/lanxichen4134-bit/001-.git
 branch: main
 remote: origin
 visibility: public
-stage: "第12篇已形成V04待试读稿；更新共用表达和选题报告2.2"
+stage: "YouTube 国际研究 1.0 建立；首轮证据补读与两份试稿待核"
 last_updated: "2026-11-13"
-last_execution: "本机机器转写、V03与V04归档、共用规则、选题报告示范及阅读副本"
-last_remote_verification: "开工核对正式main为0088ca49a365123c1b84579c6923a2238e318991；本机分叉使用隔离副本，最终远端结果见本轮执行回执"
+last_execution: "核查 11 个候选来源、发布者资料和 4 条播放页；归档研究规则、报告、两份拍摄页及试读稿"
+last_remote_verification: "开工核对正式 main 为 6d77f02c67adbc255365dfb7b28ea21f832b538a；使用隔离副本保留本机分叉，最终结果见执行回执"
 ---
+
+# 2026-11-13｜YouTube 国际研究 1.0 与首轮归档
+
+- [总览](../Content/研究资料/YouTube国际研究/README_YouTube国际优质内容研究总览.md)连接 11 个输入账号（10 个 Chrome 实读，1 个官网补核）、短/长候选池、10 条重点记录和课程去向。实际开 4 条播放页，1 条主评概述；浏览器展开逐字稿时超时，完整影音听审为 0；另读 2 份同集官方稿件，1 条长课完成备课用途评分。
+- [规范](YOUTUBE_RESEARCH_V1.0.md)与[模板](YOUTUBE_RESEARCH_TEMPLATES_V1.0.md)接入原有三层报告及跨端入口。两个独立公开资料支撑的试读稿为 C20261113-001/002，均 drafting，附拍摄页、三个开头、独立口播；盆底旧稿、长期 Brain 与小红书证据不改。
+- 已生成 Work 补证交接和 Project 阅读副本，未发送、上传或独立读回。受控原文与完整字幕未落盘。待补原片正文、可比传播基线、评论、当地专业与平台审校及本人试读。
 
 # 2026-11-13｜第12篇改稿与选题报告升级
 

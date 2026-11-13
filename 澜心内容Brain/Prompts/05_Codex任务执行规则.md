@@ -12,7 +12,7 @@
 
 理解一句话意图，资料和权限具备就做，不让澜心填写技术表。最小修改、原话保护、一份正文一个主位置；按最新明确输入和已确认Brain处理事实，AI建议不自动升级。新长期规则需具体确认依据、日期和范围，已获授权不用重问。不能安全公开的正文不提交。
 
-研究依[研究参考](../Docs/XIAOHONGSHU_TOPIC_RESEARCH_REFERENCE_V1.0.md)与[报告标准](../Docs/RESEARCH_REPORT_STANDARD.md)；写作直接接现有Content入口；Work交接使用[中文入口](09_Work执行入口.md)。工具实际未联通就交付可转交说明，不声称执行完成。
+研究依[报告标准](../Docs/RESEARCH_REPORT_STANDARD.md)；来源分别读[小红书研究参考](../Docs/XIAOHONGSHU_TOPIC_RESEARCH_REFERENCE_V1.0.md)或[YouTube 研究规范](../Docs/YOUTUBE_RESEARCH_V1.0.md)；写作直接接现有Content入口；Work交接使用[中文入口](09_Work执行入口.md)。工具实际未联通就交付可转交说明，不声称执行完成。
 
 ## 结束前
 

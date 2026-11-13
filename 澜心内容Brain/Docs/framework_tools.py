@@ -18,6 +18,11 @@ BRAIN = ROOT / '澜心内容Brain'
 # Reviewed official baseline for the 2026-11-13 feedback and report upgrade.
 BASELINE = '0088ca49a365123c1b84579c6923a2238e318991'
 APPROVED_PROTECTED_CHANGES = {
+    # 2026-11-13 YouTube 1.0: exact authorized new public research and draft paths.
+    '澜心内容Brain/Content/研究资料/YouTube国际研究/2026-11-13_来源与候选索引.md',
+    '澜心内容Brain/Content/研究资料/YouTube国际研究/2026-11-13_重点视频与课程报告.md',
+    '澜心内容Brain/Content/视频档案/2026/C20261113-001.md',
+    '澜心内容Brain/Content/视频档案/2026/C20261113-002.md',
     '澜心内容Brain/Brain/03_表达偏好_voice_style.md',
     '澜心内容Brain/Content/视频档案/2026/C20261105-012.md',
     '澜心内容Brain/Content/视频档案/2026/C20261105-012_V03.md',
@@ -49,6 +54,12 @@ SPECS = {
         ('Docs/LANXIN_VOICE_RESEARCH_V0.1.md', None),
         ('Docs/LANXIN_SHORT_VIDEO_ADAPTATION_V0.1.md', None),
         ('Prompts/03_内容共创_首条Prompt.md', None),
+    ],
+    '10_YouTube国际研究与原创创作.md': [
+        ('Docs/YOUTUBE_RESEARCH_V1.0.md', None),
+        ('Docs/YOUTUBE_RESEARCH_TEMPLATES_V1.0.md', None),
+        ('Content/研究资料/YouTube国际研究/README_YouTube国际优质内容研究总览.md', None),
+        ('Prompts/10_YouTube首轮补证_Work交接.md', None),
     ],
 }
 STATES = {'raw_idea', 'discussing', 'idea_clear', 'structure_ready', 'drafting', 'approved', 'published', 'reviewed'}
@@ -108,7 +119,10 @@ def portable_links(text, source):
 def render(name):
     chunks = ['---', 'snapshot_notice: 正式源的生成阅读副本，不在此单独改规则；尚未证明目标Project已上传。',
               'framework_version: 1.0', 'research_module_version: 2.1', 'research_report_version: 2.2',
-              'source_branch: origin/main', 'source_files:']
+              'source_branch: origin/main']
+    if name.startswith('10_'):
+        chunks.append('youtube_research_version: "1.0"')
+    chunks.append('source_files:')
     for rel, _ in SPECS[name]:
         path = BRAIN / rel
         chunks.extend([f'  - path: 澜心内容Brain/{rel}', f'    sha256: {hashlib.sha256(path.read_bytes()).hexdigest()}'])

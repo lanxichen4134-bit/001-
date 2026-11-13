@@ -39,7 +39,7 @@ public_safety: public_safe
 
 始终先读当前任务可见资料。需要长期定位时查 Brain/01、02、04、05；写作或改稿查 Brain/03、07、09，涉及故事查06，观点确认查08。以上数字对应现有 Brain 文件，不另建事实台账。按需引用具体条目和版本，已确认人群为30+女性，不默认每位评论者都属于该人群。
 
-外部研究读取[研究参考](XIAOHONGSHU_TOPIC_RESEARCH_REFERENCE_V1.0.md)和[报告标准](RESEARCH_REPORT_STANDARD.md)；创作读取[Content入口](../Content/README_内容共创流程.md)及已有内容卡；视频、转写和发布数据读取[视频系统](VIDEO_CONTENT_SYSTEM.md)及对应模板。缺少原视频只能处理提供的文本，不能称已听审。其他环境只能使用实际收到的资料；缺文件说明缺口，不假装能读本机路径或完整聊天。
+外部研究先读[报告标准](RESEARCH_REPORT_STANDARD.md)；小红书读[小红书研究参考](XIAOHONGSHU_TOPIC_RESEARCH_REFERENCE_V1.0.md)，YouTube 读[专项规范1.0](YOUTUBE_RESEARCH_V1.0.md)和[报告模板](YOUTUBE_RESEARCH_TEMPLATES_V1.0.md)，分别使用来源、采样和评分口径；创作读取[Content入口](../Content/README_内容共创流程.md)及已有内容卡；视频、转写和发布数据读取[视频系统](VIDEO_CONTENT_SYSTEM.md)及对应模板。缺少原视频只能处理提供的文本，不能称已听审。其他环境只能使用实际收到的资料；缺文件说明缺口，不假装能读本机路径或完整聊天。
 
 小红书评论研究再读[模板说明](XIAOHONGSHU_RESEARCH_TEMPLATES_V2.1.md)，按[Work入口2.1](../Prompts/09_Work执行入口.md)把一句话转换成一个主题、两类来源和获授权预算。例如“研究40岁女性关于盆底练习的疑问”可以直接生成研究设计；指定对象或浏览权限缺失时只问最必要一项，同时完成不依赖权限的准备。矩阵30种路线不是30个任务，B3扩量须有明确授权；结果按三层报告及候选卡回到同一个Content。
 
