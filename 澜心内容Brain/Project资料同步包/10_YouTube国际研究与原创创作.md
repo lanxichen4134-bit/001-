@@ -4,16 +4,16 @@ framework_version: 1.0
 research_module_version: 2.1
 research_report_version: 2.2
 source_branch: origin/main
-youtube_research_version: "1.0"
+youtube_research_version: "1.1"
 source_files:
   - path: 澜心内容Brain/Docs/YOUTUBE_RESEARCH_V1.0.md
-    sha256: 25bc88850735338c6bacacdaf337354bc28366047356247b539d68511bc2c9bd
+    sha256: a4e254193611089a9aabb34efa3e21e3a8a274a39a5ceec61beae36a752a1bf3
   - path: 澜心内容Brain/Docs/YOUTUBE_RESEARCH_TEMPLATES_V1.0.md
     sha256: 5e5a712729842adbd6240fb0ca7a5c763db4bcd4f7662dc696d0ab90f7bf5877
   - path: 澜心内容Brain/Content/研究资料/YouTube国际研究/README_YouTube国际优质内容研究总览.md
-    sha256: 61bc2b20791770249289c3b5a2c27a69403956e2df725673284cc75c19779302
+    sha256: 3c65d5c40c843e8c53e200e9e5a8dcabaa147db9e0490bbac80dbcfba532e643
   - path: 澜心内容Brain/Prompts/10_YouTube首轮补证_Work交接.md
-    sha256: c95aa0baa05503e25ba95bbc609b60894f346ac843a0233ebc636e16330b7190
+    sha256: dd7a522266e37b32ba689756823d92bcba81ecabce1474c5717f49d7c18ff64e
 ---
 
 <!-- 阅读正文从下一行开始；07仅复制正文到Project Instructions。 -->
@@ -81,6 +81,12 @@ YouTube 帮助理解国际表达、专业知识与课程结构；[小红书](htt
 - 建议有选题任务时补短视频、按研发需要补课程，定期复核来源和评分；快照和观察追加，纠错写原判断、日期、变更原因及影响，不覆写历史。发布后按既有 Reviews 追加真实数据复盘，调整方法有依据再修订版本。未建立自动任务。
 - Chat 管目标、复核、共创；Work 或可用的 Codex 浏览器承担实际研究；Codex 管公开归档与版本。用[Work入口](https://github.com/lanxichen4134-bit/001-/blob/main/%E6%BE%9C%E5%BF%83%E5%86%85%E5%AE%B9Brain/Prompts/09_Work%E6%89%A7%E8%A1%8C%E5%85%A5%E5%8F%A3.md)与下次实际读回；未发送、未配置、未独立执行分别标明。
 
+## 1.1｜从已读材料到可录制的稿件
+
+延续现有双路线和评分。短视频先完整核读作者的开头、论证、例子、转折及结尾，再列观众证据和原创判断。正文可来自可核验的同集官方稿件；公开转载文字须另标层级、与原作对应证据及影音缺口。发布者提供的历史传播数据注明原样本与日期，不能填成当期公开平台数据。长课把理论框架、研究样本、讲者解释和对现有课程的用处分开。一堂课可派生多个独立问题，每题先与现有档案去重。
+
+要求完整阅读件时，先维护正式研究正文和单一 Content 主档。用同一批次与版本生成中文 Word，汇入拍摄理解和完整口播，目录与来源可点击。文档交付前实际渲染和检查。公开仓库保存可复核的生成依据与必要链接；受控阅读件按任务授权保存，实际上传、登录与跨端读回以各自回执为准。实例见[完整研究与执行报告 1.1](https://github.com/lanxichen4134-bit/001-/blob/main/%E6%BE%9C%E5%BF%83%E5%86%85%E5%AE%B9Brain/Content/%E7%A0%94%E7%A9%B6%E8%B5%84%E6%96%99/YouTube%E5%9B%BD%E9%99%85%E7%A0%94%E7%A9%B6/2026-11-13_%E5%AE%8C%E6%95%B4%E7%A0%94%E7%A9%B6%E4%B8%8E%E6%89%A7%E8%A1%8C%E6%8A%A5%E5%91%8A1.1.md)。
+
 # YouTube 中文报告与拍摄理解模板 1.0
 
 配套：[执行规范](https://github.com/lanxichen4134-bit/001-/blob/main/%E6%BE%9C%E5%BF%83%E5%86%85%E5%AE%B9Brain/Docs/YOUTUBE_RESEARCH_V1.0.md)、[报告标准2.2](https://github.com/lanxichen4134-bit/001-/blob/main/%E6%BE%9C%E5%BF%83%E5%86%85%E5%AE%B9Brain/Docs/RESEARCH_REPORT_STANDARD.md)。沿用三层阅读顺序；YouTube 的类型、时间、评分和评论口径以专项规范为准。未取得的字段如实注明，不复制小红书统计。
@@ -126,6 +132,8 @@ YouTube 帮助理解国际表达、专业知识与课程结构；[小红书](htt
 
 # YouTube 国际优质内容研究总览
 
+**最新阅读入口** [完整研究与执行报告 1.1](https://github.com/lanxichen4134-bit/001-/blob/main/%E6%BE%9C%E5%BF%83%E5%86%85%E5%AE%B9Brain/Content/%E7%A0%94%E7%A9%B6%E8%B5%84%E6%96%99/YouTube%E5%9B%BD%E9%99%85%E7%A0%94%E7%A9%B6/2026-11-13_%E5%AE%8C%E6%95%B4%E7%A0%94%E7%A9%B6%E4%B8%8E%E6%89%A7%E8%A1%8C%E6%8A%A5%E5%91%8A1.1.md)对应 YTR-20261113-02，含同集正文、两场长课、三份试读稿与拍摄理解。下文为 1.0 首轮记录，保留其当时证据范围。
+
 2026-11-13 · 首轮 YTR-20261113-01
 
 **建议先试读《说私处不舒服，怎样把位置说清？》**。它从一个日常处境出发：想把不舒服说明白，却一下子找不到词。用两张字卡区分外阴和阴道，再让观众带走一句就诊时能用的话。第二条《绝经后只出了一点血，要不要去看？》的行动价值也清楚，先请妇科专业人员审稿。两条都是由独立公开资料支撑的原创试稿，目前还没有证据说明它们是中国观众的高频需求。
@@ -158,7 +166,7 @@ YouTube 帮助理解国际表达、专业知识与课程结构；[小红书](htt
 
 ## 以后怎么继续
 
-[YouTube 研究规范 1.0](https://github.com/lanxichen4134-bit/001-/blob/main/%E6%BE%9C%E5%BF%83%E5%86%85%E5%AE%B9Brain/Docs/YOUTUBE_RESEARCH_V1.0.md)和[中文报告/拍摄模板](https://github.com/lanxichen4134-bit/001-/blob/main/%E6%BE%9C%E5%BF%83%E5%86%85%E5%AE%B9Brain/Docs/YOUTUBE_RESEARCH_TEMPLATES_V1.0.md)给出两条路线、五项硬门槛、两套评分、公开数据比较、评论与字幕记录、版权、复盘和去重方法。下一次可直接说“研究 YouTube 上围绝经就医沟通的短视频和长课程”。YouTube 研究独立于小红书，选题、拍摄、稿件仍回到同一个 Content；未经本人确认不写进长期 Brain。
+[YouTube 研究规范](https://github.com/lanxichen4134-bit/001-/blob/main/%E6%BE%9C%E5%BF%83%E5%86%85%E5%AE%B9Brain/Docs/YOUTUBE_RESEARCH_V1.0.md)和[中文报告/拍摄模板](https://github.com/lanxichen4134-bit/001-/blob/main/%E6%BE%9C%E5%BF%83%E5%86%85%E5%AE%B9Brain/Docs/YOUTUBE_RESEARCH_TEMPLATES_V1.0.md)给出两条路线、五项硬门槛、两套评分、公开数据比较、评论与字幕记录、版权、复盘和去重方法。下一次可直接说“研究 YouTube 上围绝经就医沟通的短视频和长课程”。YouTube 研究独立于小红书，选题、拍摄、稿件仍回到同一个 Content；未经本人确认不写进长期 Brain。
 
 ## 执行和归档回执
 
@@ -186,3 +194,7 @@ YouTube 帮助理解国际表达、专业知识与课程结构；[小红书](htt
 4. 五门槛逐项列状态和理由，只有足够材料才给完整分；如比较播放优先同频道同格式和相近发布年龄。区分实际评论和推测，读不到就记录失败。把合格证据加回同一研究编号，复核试稿是否该升级或仍为探索。提供具体专业审核与平台缺口。
 
 **权限与返回。** 仅公开网页或已获准、合法的资料；正常登录需要本人时用正规界面，不能索取凭据或绕过限制。无安全位置就不保存敏感原话或定位；有获准位置时，只保留必要原文、回复上下文和译文，回传安全编号。未经许可不留全文、不下载或转载。按中文模板返回总览、逐条完整理由、证据附录、候选与拍摄页修订、课程去向、真实计数和失败环节；列本轮新增与累计，注明未读的范围、什么会改变结论、所需的最少决定。实际有回执才报已执行，不触发发布或长期 Brain 更新。
+
+## 1.1 接续回执
+
+先读[1.1 报告](https://github.com/lanxichen4134-bit/001-/blob/main/%E6%BE%9C%E5%BF%83%E5%86%85%E5%AE%B9Brain/Content/%E7%A0%94%E7%A9%B6%E8%B5%84%E6%96%99/YouTube%E5%9B%BD%E9%99%85%E7%A0%94%E7%A9%B6/2026-11-13_%E5%AE%8C%E6%95%B4%E7%A0%94%E7%A9%B6%E4%B8%8E%E6%89%A7%E8%A1%8C%E6%8A%A5%E5%91%8A1.1.md)。A05、A15、A16、A17、A19 已有对应文字，B17、B18 已有官方讲稿重点段落与备课判断。先补原片影音、真实评论和当期比较，再核 A18 与 B01 的原片正文。原 11 个账号无需重新分类。使用现有编号，三份稿件以 1.1 所链接版本为准。本说明尚未发送给独立 Work。

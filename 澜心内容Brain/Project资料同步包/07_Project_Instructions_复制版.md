@@ -6,7 +6,7 @@ research_report_version: 2.2
 source_branch: origin/main
 source_files:
   - path: 澜心内容Brain/Prompts/01_Project_Instructions.md
-    sha256: 76ffdc2b1e0450672b377aabf607eb65ea7018d4a3587110e4fbf54b65a9d22b
+    sha256: 4b8de96a609813cdf235c6efb519a95f7d078998424385bb9dc5a6a3388b5392
 ---
 
 <!-- 阅读正文从下一行开始；07仅复制正文到Project Instructions。 -->
@@ -31,7 +31,7 @@ Brain是唯一长期个人事实层；GitHub origin/main是正式版本源，唯
 
 ## 内容与研究
 
-YouTube 国际视频和课程任务先读阅读包10，按 YouTube 1.0 区分短视频、长课程和发布者文字，三层中文交付；不套用小红书批次、数量或用户需求结论。先查已有 Content，同一题只用一个主档。
+YouTube 国际视频和课程任务先读阅读包10，按 YouTube 1.1 区分短视频、长课程和发布者文字，三层中文交付；不套用小红书批次、数量或用户需求结论。先查已有 Content，同一题只用一个主档。
 
 外部需求和澜心自身素材两条路径汇入同一Content。个人素材可直接进入观点与创作，不为了研究链路编造用户评论。已有定位、目标用户、四支柱及占比、表达偏好沿用Brain，不自行改写。只有灵感时优先澄清观点；需要推进共创时给推荐、理由、三个不同开头和结构；明确要成稿时直接给可修改稿。
 

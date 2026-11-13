@@ -18,6 +18,11 @@ BRAIN = ROOT / '澜心内容Brain'
 # Reviewed official baseline for the 2026-11-13 feedback and report upgrade.
 BASELINE = '0088ca49a365123c1b84579c6923a2238e318991'
 APPROVED_PROTECTED_CHANGES = {
+    # YouTube 1.1: reviewed report and three draft versions.
+    '澜心内容Brain/Content/研究资料/YouTube国际研究/2026-11-13_完整研究与执行报告1.1.md',
+    '澜心内容Brain/Content/视频档案/2026/C20261113-001_V02.md',
+    '澜心内容Brain/Content/视频档案/2026/C20261113-002_V02.md',
+    '澜心内容Brain/Content/视频档案/2026/C20261113-003.md',
     # 2026-11-13 YouTube 1.0: exact authorized new public research and draft paths.
     '澜心内容Brain/Content/研究资料/YouTube国际研究/2026-11-13_来源与候选索引.md',
     '澜心内容Brain/Content/研究资料/YouTube国际研究/2026-11-13_重点视频与课程报告.md',
@@ -121,7 +126,7 @@ def render(name):
               'framework_version: 1.0', 'research_module_version: 2.1', 'research_report_version: 2.2',
               'source_branch: origin/main']
     if name.startswith('10_'):
-        chunks.append('youtube_research_version: "1.0"')
+        chunks.append('youtube_research_version: "1.1"')
     chunks.append('source_files:')
     for rel, _ in SPECS[name]:
         path = BRAIN / rel
