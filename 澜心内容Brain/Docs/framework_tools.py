@@ -15,11 +15,25 @@ from urllib.parse import quote, unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[2]
 BRAIN = ROOT / '澜心内容Brain'
-BASELINE = '1b307b502b0cc6549861bd835cf96438d686c63d'
+# Reviewed official baseline for the 2026-11-13 feedback and report upgrade.
+BASELINE = '0088ca49a365123c1b84579c6923a2238e318991'
+APPROVED_PROTECTED_CHANGES = {
+    '澜心内容Brain/Brain/03_表达偏好_voice_style.md',
+    '澜心内容Brain/Content/视频档案/2026/C20261105-012.md',
+    '澜心内容Brain/Content/视频档案/2026/C20261105-012_V03.md',
+    '澜心内容Brain/Content/视频档案/2026/C20261105-012_V04.md',
+}
+COMPACT_BASELINE = '1b307b502b0cc6549861bd835cf96438d686c63d'
+COURSE_CATALOG = '课程体系/两性心理学系列_课程总纲与三级教学设计_V1.0.md'
 REMOTE = 'https://github.com/lanxichen4134-bit/001-.git'
 READING = BRAIN / 'Project资料同步包'
 SPECS = {
     '01_项目总览与协作方式.md': [('README_内容Brain使用说明.md', None)],
+    '04_表达方式_经典观点与内容红线.md': [
+        ('Brain/03_表达偏好_voice_style.md', None),
+        ('Brain/08_经典观点_core_beliefs.md', None),
+        ('Brain/07_禁用表达_forbidden_language.md', None),
+    ],
     '06_系统地图与当前项目状态.md': [('Docs/SYSTEM_MAP.md', None), ('Docs/PROJECT_STATE.md', '<project_state>')],
     '07_Project_Instructions_复制版.md': [('Prompts/01_Project_Instructions.md', None)],
     '08_一句话执行与研究协作.md': [
@@ -31,6 +45,7 @@ SPECS = {
         ('Prompts/09_Work执行入口.md', None),
     ],
     '09_短视频表达与写作试用.md': [
+        ('Brain/03_表达偏好_voice_style.md', None),
         ('Docs/LANXIN_VOICE_RESEARCH_V0.1.md', None),
         ('Docs/LANXIN_SHORT_VIDEO_ADAPTATION_V0.1.md', None),
         ('Prompts/03_内容共创_首条Prompt.md', None),
@@ -92,7 +107,7 @@ def portable_links(text, source):
 
 def render(name):
     chunks = ['---', 'snapshot_notice: 正式源的生成阅读副本，不在此单独改规则；尚未证明目标Project已上传。',
-              'framework_version: 1.0', 'research_module_version: 2.1',
+              'framework_version: 1.0', 'research_module_version: 2.1', 'research_report_version: 2.2',
               'source_branch: origin/main', 'source_files:']
     for rel, _ in SPECS[name]:
         path = BRAIN / rel
@@ -161,22 +176,21 @@ def check():
     old_names = git('ls-tree', '-r', '--name-only', '-z', BASELINE).decode().split('\0')
     count = 0
     for name in old_names:
-        if name and protected(name):
+        if name and protected(name) and name not in APPROVED_PROTECTED_CHANGES:
             count += 1
             path = ROOT / name
             expect(path.exists() and path.read_bytes() == git('show', f'{BASELINE}:{name}'), f'protected asset changed: {name}')
-    # This upgrade leaves the old compact personal snapshots byte-for-byte intact.
-    # Future Brain changes require human review/regeneration of these four files.
-    for prefix in ('02_', '03_', '04_', '05_'):
+    # These personal snapshots still use their original reviewed compact text.
+    for prefix in ('02_', '03_', '05_'):
         files = list(READING.glob(prefix + '*.md'))
         expect(len(files) == 1, f'legacy snapshot missing/duplicated: {prefix}')
         for path in files:
             rel = path.relative_to(ROOT).as_posix()
-            expect(path.read_bytes() == git('show', f'{BASELINE}:{rel}'), f'legacy fact snapshot changed: {rel}')
+            expect(path.read_bytes() == git('show', f'{COMPACT_BASELINE}:{rel}'), f'legacy fact snapshot changed: {rel}')
     changed = changed_files()
     for name in changed:
         path = ROOT / name
-        expect(not protected(name), f'unexpected write in protected asset scope: {name}')
+        expect(not protected(name) or name in APPROVED_PROTECTED_CHANGES, f'unexpected write in protected asset scope: {name}')
         expect(path.exists(), f'unexpected deletion: {name}')
         if not path.exists() or path.suffix != '.md':
             continue
@@ -187,8 +201,9 @@ def check():
         for path in (BRAIN / folder).rglob('*.md'):
             if path.name.startswith(('README', '_TEMPLATE')):
                 continue
-            if '研究资料' in path.relative_to(BRAIN).parts:
-                # Bibliography metadata is not Content production status.
+            relative = path.relative_to(BRAIN / folder)
+            if '研究资料' in relative.parts or (folder == 'Content' and relative.as_posix() == COURSE_CATALOG):
+                # Bibliographies and the existing course catalog use their own metadata.
                 continue
             match = re.search(r'\A---\n(.*?)\n---', path.read_text(), re.S)
             if match:
@@ -198,7 +213,7 @@ def check():
     for rel in ('Docs/SYSTEM_MAP.md', 'Prompts/01_Project_Instructions.md'):
         expect(CHAIN in (BRAIN / rel).read_text(), f'content chain missing: {rel}')
     report = (BRAIN / 'Docs/RESEARCH_REPORT_STANDARD.md').read_text()
-    for token in ('第一层', '第二层', '第三层', '推翻', '替代解释', '五门槛', '抖音', '小红书', '微信视频号'):
+    for token in ('第一层', '第二层', '第三层', '推翻', '替代解释', '五门槛', '抖音', '小红书', '微信视频号', '笔记作者', '评论者', 'AI 判断', '拍摄理解页'):
         expect(token in report, f'report contract missing: {token}')
     acceptance = (BRAIN / 'Docs/FRAMEWORK_ACCEPTANCE_2026-10-19.md').read_text()
     for i in range(1, 9):
@@ -211,7 +226,7 @@ def check():
                                     cwd=ROOT, capture_output=True, text=True)
     expect(template_check.returncode == 0, 'template audit: ' + template_check.stdout + template_check.stderr)
     ignore = (ROOT / '.gitignore').read_text()
-    for token in ('.env', 'private/', 'raw/', 'LocalMedia/', 'DataScreenshots/', 'TranscriptionCache/', '*.xlsx', 'ResearchRuns/'):
+    for token in ('.env', 'private/', 'raw/', 'LocalMedia/', 'DataScreenshots/', 'TranscriptionCache/', '*.xlsx', 'ResearchRuns/', '/录音/'):
         expect(token in ignore, f'privacy ignore missing: {token}')
     whitespace = subprocess.run(['git', 'diff', '--check', BASELINE], cwd=ROOT, capture_output=True, text=True)
     expect(whitespace.returncode == 0, 'git diff whitespace check failed: ' + whitespace.stdout)
@@ -219,7 +234,7 @@ def check():
         for failure in failures:
             print('FAIL:', failure)
         return 1
-    print(f'PASS: {len(SPECS)} generated snapshots; {count} protected original assets; 4 unchanged compact fact snapshots; {len(changed)} changed/new files; links, privacy patterns, state chain, report contract, 8 framework/10 research simulation records, public templates and diff checks.')
+    print(f'PASS: {len(SPECS)} generated snapshots; {count} protected original assets; 3 unchanged compact fact snapshots; {len(changed)} changed/new files; links, privacy patterns, state chain, report contract, 8 framework/10 research simulation records, public templates and diff checks.')
     print('LIMIT: static checks and recorded same-session simulations; no Work/browser, upload, medical/platform approval or publishing verified. Manual staged review still required.')
     return 0
 
@@ -241,6 +256,9 @@ def self_test():
         assert 'sha256:' in expected
     assert protected('澜心内容Brain/Brain/03_表达偏好_voice_style.md')
     assert not protected('澜心内容Brain/Content/README_内容共创流程.md')
+    assert all(protected(name) for name in APPROVED_PROTECTED_CHANGES)
+    for name in ('04_表达方式_经典观点与内容红线.md', '09_短视频表达与写作试用.md'):
+        assert '短视频口播共用要求（2026-11-13）' in render(name)
     print('PASS: checker positive/negative cases for private paths, token-like strings, links, snapshot drift and protected paths. No repository mutations.')
     return 0
 

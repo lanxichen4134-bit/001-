@@ -8,6 +8,8 @@ public_safety: public_safe
 
 # 小红书评论研究与原创视频选题专项执行标准
 
+2026-11-13 交付说明：本文件的执行范围、研究层级与累计预算仍用 V2.1。候选报告按[报告标准 2.2](RESEARCH_REPORT_STANDARD.md)提供可审阅原文、判断依据和拍摄理解页。
+
 ## 1. 定位与使用边界
 
 2026-10-21按本轮专项升级prompt与四份新附件原位升级V2.1，保留原文件路径以免既有链接失效。这里同时承担专项入口与后台标准；模板、来源差异及数据使用见[模板说明](XIAOHONGSHU_RESEARCH_TEMPLATES_V2.1.md)，测试与未验证项见[专项验收](XIAOHONGSHU_V2.1_ACCEPTANCE_2026-10-21.md)。
