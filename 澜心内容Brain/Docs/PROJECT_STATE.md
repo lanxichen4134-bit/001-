@@ -6,10 +6,17 @@ branch: main
 remote: origin
 visibility: public
 stage: "YouTube V1.2，六篇三分钟原创试读稿与两堂长课学习笔记"
-last_updated: "2026-11-14"
-last_execution: "核读八条短片及两堂长课同集文字，完成六篇口播、中文 Word 与公开安全归档"
-last_remote_verification: "开工核对 GitHub main 为 a5b7781f76623abfb4c1abc8f3ece0a1cc43c920；最终远端读回见交付回执"
+last_updated: "2026-11-17"
+last_execution: "按澜心2026-11-17明确确认，更新Brain/03真实探索者叙事表达偏好"
+last_remote_verification: "本轮GitHub连接器提交，最终main SHA及文件读回以本次核验为准"
 ---
+
+# 2026-11-17｜叙事表达偏好确认入 Brain
+
+- 澜心针对第三方《关于爱情》原稿的叙述方式说明偏好，并明确反馈“对，这个感觉对了，更像我了，你帮我写进仓库形成Brain”。
+- 已更新 [Brain/03 表达偏好](../Brain/03_表达偏好_voice_style.md)：确认“真实探索者的生命叙事”的长期方向，补充真实困惑—学习/经历/体证—修正理解—开放讨论的叙事逻辑、知识署名、生活场景、避免二元对立，以及不扮演标准答案专家的角色边界。
+- 只保存公开安全的澜心短句和 AI 提炼说明，不入库第三方逐字稿、长篇聊天、虚构第一人称经历；不修改 Brain/09 原话库、Brain/08 经典观点或发布状态。
+- 当前未更新 Project 阅读副本、未上传线上 Project；后续需由正式工具重新生成、检查与配置，并回读验证。本次 GitHub 连接器直接提交，未执行本地 git 暂存/推送命令。
 
 # 2026-11-14｜YouTube V1.2 完整拍摄文案与课程备课
 
