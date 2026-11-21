@@ -6,10 +6,14 @@ branch: main
 remote: origin
 visibility: public
 stage: "YouTube V1.2，六篇三分钟原创试读稿与两堂长课学习笔记"
-last_updated: "2026-11-17"
-last_execution: "按澜心最新反馈，在Brain/03新增个人成长类叙事分类，并与专业知识解释类分开"
+last_updated: "2026-11-21"
+last_execution: "按澜心确认，在仓库根目录存档《澜心短视频表达与思维逻辑》原文"
 last_remote_verification: "本轮GitHub连接器提交，最终main SHA及文件读回以本次核验为准"
 ---
+
+# 2026-11-21｜短视频表达与思维逻辑原文归档
+
+按澜心确认，将桌面文件[《澜心短视频表达与思维逻辑》](../../澜心短视频表达与思维逻辑.md)原样归档到公开仓库根目录，供查阅原始材料。
 
 # 2026-11-17｜个人成长类叙事方式正式分类
 
