@@ -58,10 +58,14 @@ flowchart TD
 
 专项状态分列“已建立规则、已配置工具、已验证访问能力、已完成真实研究”。截至2026-10-21，规则和本地模板检查已实施；[两性亲密关系RUN](XIAOHONGSHU_RELATIONSHIP_RESEARCH_2026-10-21.md)已在本地Work执行真实评论链路、独立聊天复验及B2/B3取样，交回2个S3候选待审核。研究执行不等于已通过人工验收；本轮未新增工具配置，云端Work、长期登录和线上Project同步仍未验证。资料生成与Git同步不能代替实际能力或业务验收。
 
-旧Obsidian Vault为只读辅助来源，参见[既有资产地图](EXISTING_ASSET_MAP.md)。原始研究、聊天、健康资料、音视频、截图和未公开经营资料留在获准受控位置，不写入公开GitHub，也不默认跨账号传递。jingyingxitong仍是受控资料来源，本轮未读取或修改。
+私有 Obsidian 是思想、原话、专业研究与 003 内部课程的主位置。001 是个人 IP 公开 Content 的主位置。依据 [D-016](DECISIONS.md)，从私库派生公开稿须独立 Content ID、来源编号、固定版本、用途和公开许可。日常默认按题只读，参见[既有资产地图](EXISTING_ASSET_MAP.md)。原始研究、聊天、健康资料、音视频、截图和未公开经营资料留在获准受控位置，不写入公开GitHub，也不默认跨账号传递。jingyingxitong仍是受控资料来源，本轮未读取或修改。
 
 GitHub origin/main是本项目唯一正式版本源；Project/Work的阅读资料只从它派生。四支柱和比例来自Brain/04，事实不能因重复出现在同步包而获得更高确认等级。
 
 ## YouTube 国际研究模块
 
 [规则与两条路线](YOUTUBE_RESEARCH_V1.0.md) → [来源、中文总览和逐条报告](../Content/研究资料/YouTube国际研究/README_YouTube国际优质内容研究总览.md) → [同一 Content 或已有课程入口](../Content/README_内容共创流程.md)。Chat/Work 读阅读包10；Codex 维护正式源。YouTube 不复用小红书采样或统计，两个来源可共同支持同一个 Content。
+
+## 两个来源如何维护
+
+每次正式任务先核相关 main、主件和版本。Brain、Content 或指令改动后，检查受影响的阅读包，运行现有生成器并核对每个来源的 SHA256。记录待上传；目标项目保存并读回对应版本后，才登记云端配置结果。私库更新时，原文仍在原位，只在公开稿确需采用时更新安全摘要或引用。Chat 主要负责判断与共创，Work 承接实际研究，Codex 管理正式版本。访问、来源和接收范围逐端核对。

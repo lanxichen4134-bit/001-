@@ -66,6 +66,9 @@ SPECS = {
     ],
     '09_短视频表达与写作试用.md': [
         ('Brain/03_表达偏好_voice_style.md', None),
+        ('Brain/07_禁用表达_forbidden_language.md', None),
+        ('Brain/08_经典观点_core_beliefs.md', None),
+        ('Brain/09_语言与金句_language_quotes.md', None),
         ('Docs/LANXIN_VOICE_RESEARCH_V0.1.md', None),
         ('Docs/LANXIN_SHORT_VIDEO_ADAPTATION_V0.1.md', None),
         ('Prompts/03_内容共创_首条Prompt.md', None),
