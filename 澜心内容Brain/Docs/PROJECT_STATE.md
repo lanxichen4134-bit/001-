@@ -6,10 +6,14 @@ branch: main
 remote: origin
 visibility: public
 stage: "双仓正式分工与 001 Project 内容共创验收"
-last_updated: "2026-11-22"
-last_execution: "001 目标 Chat 八题已实测；独立本机 Work 已按题查证双仓；补充版本定位和指纹核对"
+last_updated: "2026-11-23"
+last_execution: "YouTube 国际研究 YTR-20261123-01：六个拍摄理解页，一篇原创试读稿"
 last_remote_verification: "已读回公开实施提交 dfae7dd5e9ca386b1f8e5a17e45c55e84abe8818 与私库提交 17b62ba6536d48be99da1cfa91af82a5d2a45108；后续仅以实施报告和 main 固定回执为准"
 ---
+
+# 2026-11-23｜YouTube 选题实跑
+
+本批次登记 47 个视频 ID，深读 9 份同集文字，两个原片评论区去重分析 17 条主评。六题开发建议与首稿 C20261123-001 V01 见[审核入口](../Content/研究资料/YouTube国际研究/2026-11-23_拍摄优先级与审核交接.md)。状态 drafting，待本人试读、必要专业审校与 Chat 独立读回。
 
 # 2026-11-22｜线上资料和跨端实测
 

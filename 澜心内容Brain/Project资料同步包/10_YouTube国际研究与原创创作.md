@@ -11,7 +11,7 @@ source_files:
   - path: 澜心内容Brain/Docs/YOUTUBE_RESEARCH_TEMPLATES_V1.0.md
     sha256: 5e5a712729842adbd6240fb0ca7a5c763db4bcd4f7662dc696d0ab90f7bf5877
   - path: 澜心内容Brain/Content/研究资料/YouTube国际研究/README_YouTube国际优质内容研究总览.md
-    sha256: c8a0a3f246a7648c77f8f0bac9e895d178b5cd40a2e87785b2f60cd9dc255bd1
+    sha256: 0788d4603d8d03c3d5a08f2cec517233beac3975479bc488decbd2a295012c03
   - path: 澜心内容Brain/Prompts/10_YouTube首轮补证_Work交接.md
     sha256: e2ed3f0c2a1cf590980713b83b7f293dfeb32c473a24df45a014c2bae9fe958a
 ---
@@ -132,7 +132,9 @@ YouTube 帮助理解国际表达、专业知识与课程结构；[小红书](htt
 
 # YouTube 国际优质内容研究总览
 
-**最新阅读入口** [完整研究与执行报告 1.1](https://github.com/lanxichen4134-bit/001-/blob/main/%E6%BE%9C%E5%BF%83%E5%86%85%E5%AE%B9Brain/Content/%E7%A0%94%E7%A9%B6%E8%B5%84%E6%96%99/YouTube%E5%9B%BD%E9%99%85%E7%A0%94%E7%A9%B6/2026-11-13_%E5%AE%8C%E6%95%B4%E7%A0%94%E7%A9%B6%E4%B8%8E%E6%89%A7%E8%A1%8C%E6%8A%A5%E5%91%8A1.1.md)对应 YTR-20261113-02，含同集正文、两场长课、三份试读稿与拍摄理解。下文为 1.0 首轮记录，保留其当时证据范围。
+**2026-11-23 最新批次**　[六题优先级、拍摄理解与首篇口播](https://github.com/lanxichen4134-bit/001-/blob/main/%E6%BE%9C%E5%BF%83%E5%86%85%E5%AE%B9Brain/Content/%E7%A0%94%E7%A9%B6%E8%B5%84%E6%96%99/YouTube%E5%9B%BD%E9%99%85%E7%A0%94%E7%A9%B6/2026-11-23_%E6%8B%8D%E6%91%84%E4%BC%98%E5%85%88%E7%BA%A7%E4%B8%8E%E5%AE%A1%E6%A0%B8%E4%BA%A4%E6%8E%A5.md)。本轮实际进入原片页，区分同集文字、观众异议和影音核验。
+
+**2026-11-13 历史入口** [完整研究与执行报告 1.1](https://github.com/lanxichen4134-bit/001-/blob/main/%E6%BE%9C%E5%BF%83%E5%86%85%E5%AE%B9Brain/Content/%E7%A0%94%E7%A9%B6%E8%B5%84%E6%96%99/YouTube%E5%9B%BD%E9%99%85%E7%A0%94%E7%A9%B6/2026-11-13_%E5%AE%8C%E6%95%B4%E7%A0%94%E7%A9%B6%E4%B8%8E%E6%89%A7%E8%A1%8C%E6%8A%A5%E5%91%8A1.1.md)对应 YTR-20261113-02，含同集正文、两场长课、三份试读稿与拍摄理解。下文为 1.0 首轮记录，保留其当时证据范围。
 
 2026-11-13 · 首轮 YTR-20261113-01
 
